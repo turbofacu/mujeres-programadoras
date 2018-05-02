@@ -1,0 +1,845 @@
+.hero {
+  background-color: #f8e71c;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-content {
+  background-color: #9b5ea5;
+  padding: 32px;
+}
+
+@media (max-width: 767px) {
+  .hero-content {
+    padding: 32px 16px;
+  }
+}
+
+.hero-title {
+  font-size: 42px;
+  line-height: 1.6em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.graphOne {
+  margin-bottom: 50px;
+}
+
+.graphOne .graph-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 767px) {
+  .graphOne .graph-content {
+    font-size: 12px;
+  }
+}
+
+.go-bars {
+  width: -webkit-calc(100% - 72px);
+  width: calc(100% - 72px);
+  padding-left: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 1059px) {
+  .go-bars {
+    padding-left: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .go-bars {
+    width: -webkit-calc(100% - 32px);
+    width: calc(100% - 32px);
+    padding-left: 8px;
+  }
+}
+
+.go-bars-flex {
+  width: 100%;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.go-bars-left {
+  color: black;
+  width: 72px;
+  height: 600px;
+  padding: 0 16px 0 0;
+  border-right: 2px solid #CCC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media (max-width: 767px) {
+  .go-bars-left {
+    width: 32px;
+    padding: 0 8px 0 0;
+  }
+}
+
+.go-bars-bottom {
+  color: black;
+  width: -webkit-calc(100% - 70px);
+  width: calc(100% - 70px);
+  padding: 16px 0 0 34px;
+  border-top: 2px solid #CCC;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: auto;
+}
+
+@media (max-width: 767px) {
+  .go-bars-bottom {
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+  }
+}
+
+.go-bars-year {
+  width: 13.3333%;
+  text-align: center;
+}
+
+.go-bar {
+  width: -webkit-calc((100% / 6) - 16px * 2);
+  width: calc((100% / 6) - 16px * 2);
+  position: relative;
+}
+
+@media (max-width: 1059px) {
+  .go-bar {
+    width: -webkit-calc((100% / 6) - 16px);
+    width: calc((100% / 6) - 16px);
+  }
+}
+
+@media (max-width: 767px) {
+  .go-bar {
+    width: -webkit-calc((100% / 6) - 8px);
+    width: calc((100% / 6) - 8px);
+  }
+}
+
+.go-bar:nth-child(1) .go-bar-men {
+  -webkit-transition: -webkit-transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 0ms;
+  transition: -webkit-transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 0ms;
+  transition: transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 0ms;
+  transition: transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 0ms, -webkit-transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 0ms;
+}
+
+.go-bar:nth-child(1) .go-bar-women {
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 250ms;
+  transition: -webkit-transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 250ms;
+  transition: transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 250ms;
+  transition: transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 250ms, -webkit-transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 250ms;
+}
+
+.go-bar:nth-child(1) .go-bar-percentage {
+  -webkit-transition: opacity 250ms ease-out 250ms;
+  transition: opacity 250ms ease-out 250ms;
+}
+
+.go-bar:nth-child(2) .go-bar-men {
+  -webkit-transition: -webkit-transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 250ms;
+  transition: -webkit-transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 250ms;
+  transition: transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 250ms;
+  transition: transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 250ms, -webkit-transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 250ms;
+}
+
+.go-bar:nth-child(2) .go-bar-women {
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 500ms;
+  transition: -webkit-transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 500ms;
+  transition: transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 500ms;
+  transition: transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 500ms, -webkit-transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 500ms;
+}
+
+.go-bar:nth-child(2) .go-bar-percentage {
+  -webkit-transition: opacity 250ms ease-out 500ms;
+  transition: opacity 250ms ease-out 500ms;
+}
+
+.go-bar:nth-child(3) .go-bar-men {
+  -webkit-transition: -webkit-transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 500ms;
+  transition: -webkit-transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 500ms;
+  transition: transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 500ms;
+  transition: transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 500ms, -webkit-transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 500ms;
+}
+
+.go-bar:nth-child(3) .go-bar-women {
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 750ms;
+  transition: -webkit-transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 750ms;
+  transition: transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 750ms;
+  transition: transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 750ms, -webkit-transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 750ms;
+}
+
+.go-bar:nth-child(3) .go-bar-percentage {
+  -webkit-transition: opacity 250ms ease-out 750ms;
+  transition: opacity 250ms ease-out 750ms;
+}
+
+.go-bar:nth-child(4) .go-bar-men {
+  -webkit-transition: -webkit-transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 750ms;
+  transition: -webkit-transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 750ms;
+  transition: transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 750ms;
+  transition: transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 750ms, -webkit-transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 750ms;
+}
+
+.go-bar:nth-child(4) .go-bar-women {
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 1000ms;
+  transition: -webkit-transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 1000ms;
+  transition: transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 1000ms;
+  transition: transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 1000ms, -webkit-transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 1000ms;
+}
+
+.go-bar:nth-child(4) .go-bar-percentage {
+  -webkit-transition: opacity 250ms ease-out 1000ms;
+  transition: opacity 250ms ease-out 1000ms;
+}
+
+.go-bar:nth-child(5) .go-bar-men {
+  -webkit-transition: -webkit-transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 1000ms;
+  transition: -webkit-transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 1000ms;
+  transition: transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 1000ms;
+  transition: transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 1000ms, -webkit-transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 1000ms;
+}
+
+.go-bar:nth-child(5) .go-bar-women {
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 1250ms;
+  transition: -webkit-transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 1250ms;
+  transition: transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 1250ms;
+  transition: transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 1250ms, -webkit-transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 1250ms;
+}
+
+.go-bar:nth-child(5) .go-bar-percentage {
+  -webkit-transition: opacity 250ms ease-out 1250ms;
+  transition: opacity 250ms ease-out 1250ms;
+}
+
+.go-bar:nth-child(6) .go-bar-men {
+  -webkit-transition: -webkit-transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 1250ms;
+  transition: -webkit-transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 1250ms;
+  transition: transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 1250ms;
+  transition: transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 1250ms, -webkit-transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 1250ms;
+}
+
+.go-bar:nth-child(6) .go-bar-women {
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 1500ms;
+  transition: -webkit-transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 1500ms;
+  transition: transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 1500ms;
+  transition: transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 1500ms, -webkit-transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 1500ms;
+}
+
+.go-bar:nth-child(6) .go-bar-percentage {
+  -webkit-transition: opacity 250ms ease-out 1500ms;
+  transition: opacity 250ms ease-out 1500ms;
+}
+
+.go-bar:nth-child(7) .go-bar-men {
+  -webkit-transition: -webkit-transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 1500ms;
+  transition: -webkit-transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 1500ms;
+  transition: transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 1500ms;
+  transition: transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 1500ms, -webkit-transform 500ms cubic-bezier(0, 0, 0.56, 1.26) 1500ms;
+}
+
+.go-bar:nth-child(7) .go-bar-women {
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 1750ms;
+  transition: -webkit-transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 1750ms;
+  transition: transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 1750ms;
+  transition: transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 1750ms, -webkit-transform 250ms cubic-bezier(0, 0, 0.56, 1.26) 1750ms;
+}
+
+.go-bar:nth-child(7) .go-bar-percentage {
+  -webkit-transition: opacity 250ms ease-out 1750ms;
+  transition: opacity 250ms ease-out 1750ms;
+}
+
+.go-bar.animated .go-bar-men, .go-bar.animated .go-bar-women {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.go-bar.animated .go-bar-percentage {
+  opacity: 1;
+}
+
+.go-bar-top {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.go-bar-men {
+  background-color: #509587;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+.go-bar-women {
+  color: white;
+  text-align: center;
+  background-color: #9b5ea5;
+  width: 100%;
+  padding-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+.go-bar-percentage {
+  opacity: 0;
+}
+
+.go-bar-year {
+  color: black;
+}
+
+.gto-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.gto-bottom {
+  padding-left: 286px;
+}
+
+.gto-bottom-border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-top: 16px;
+  border-top: 1px solid #CCC;
+}
+
+.gto-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gto-bar:nth-child(1) .gto-bar-name {
+  -webkit-transition: opacity 200ms ease-out 0ms;
+  transition: opacity 200ms ease-out 0ms;
+}
+
+.gto-bar:nth-child(1) .gto-bar-background {
+  -webkit-transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 0ms;
+  transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 0ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 0ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 0ms, -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 0ms;
+}
+
+.gto-bar:nth-child(2) .gto-bar-name {
+  -webkit-transition: opacity 200ms ease-out 150ms;
+  transition: opacity 200ms ease-out 150ms;
+}
+
+.gto-bar:nth-child(2) .gto-bar-background {
+  -webkit-transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 150ms;
+  transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 150ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 150ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 150ms, -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 150ms;
+}
+
+.gto-bar:nth-child(3) .gto-bar-name {
+  -webkit-transition: opacity 200ms ease-out 300ms;
+  transition: opacity 200ms ease-out 300ms;
+}
+
+.gto-bar:nth-child(3) .gto-bar-background {
+  -webkit-transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 300ms;
+  transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 300ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 300ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 300ms, -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 300ms;
+}
+
+.gto-bar:nth-child(4) .gto-bar-name {
+  -webkit-transition: opacity 200ms ease-out 450ms;
+  transition: opacity 200ms ease-out 450ms;
+}
+
+.gto-bar:nth-child(4) .gto-bar-background {
+  -webkit-transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 450ms;
+  transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 450ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 450ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 450ms, -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 450ms;
+}
+
+.gto-bar:nth-child(5) .gto-bar-name {
+  -webkit-transition: opacity 200ms ease-out 600ms;
+  transition: opacity 200ms ease-out 600ms;
+}
+
+.gto-bar:nth-child(5) .gto-bar-background {
+  -webkit-transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 600ms;
+  transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 600ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 600ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 600ms, -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 600ms;
+}
+
+.gto-bar:nth-child(6) .gto-bar-name {
+  -webkit-transition: opacity 200ms ease-out 750ms;
+  transition: opacity 200ms ease-out 750ms;
+}
+
+.gto-bar:nth-child(6) .gto-bar-background {
+  -webkit-transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 750ms;
+  transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 750ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 750ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 750ms, -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 750ms;
+}
+
+.gto-bar:nth-child(7) .gto-bar-name {
+  -webkit-transition: opacity 200ms ease-out 900ms;
+  transition: opacity 200ms ease-out 900ms;
+}
+
+.gto-bar:nth-child(7) .gto-bar-background {
+  -webkit-transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 900ms;
+  transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 900ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 900ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 900ms, -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 900ms;
+}
+
+.gto-bar:nth-child(8) .gto-bar-name {
+  -webkit-transition: opacity 200ms ease-out 1050ms;
+  transition: opacity 200ms ease-out 1050ms;
+}
+
+.gto-bar:nth-child(8) .gto-bar-background {
+  -webkit-transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1050ms;
+  transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1050ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1050ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1050ms, -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1050ms;
+}
+
+.gto-bar:nth-child(9) .gto-bar-name {
+  -webkit-transition: opacity 200ms ease-out 1200ms;
+  transition: opacity 200ms ease-out 1200ms;
+}
+
+.gto-bar:nth-child(9) .gto-bar-background {
+  -webkit-transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1200ms;
+  transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1200ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1200ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1200ms, -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1200ms;
+}
+
+.gto-bar:nth-child(10) .gto-bar-name {
+  -webkit-transition: opacity 200ms ease-out 1350ms;
+  transition: opacity 200ms ease-out 1350ms;
+}
+
+.gto-bar:nth-child(10) .gto-bar-background {
+  -webkit-transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1350ms;
+  transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1350ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1350ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1350ms, -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1350ms;
+}
+
+.gto-bar:nth-child(11) .gto-bar-name {
+  -webkit-transition: opacity 200ms ease-out 1500ms;
+  transition: opacity 200ms ease-out 1500ms;
+}
+
+.gto-bar:nth-child(11) .gto-bar-background {
+  -webkit-transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1500ms;
+  transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1500ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1500ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1500ms, -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1500ms;
+}
+
+.gto-bar:nth-child(12) .gto-bar-name {
+  -webkit-transition: opacity 200ms ease-out 1650ms;
+  transition: opacity 200ms ease-out 1650ms;
+}
+
+.gto-bar:nth-child(12) .gto-bar-background {
+  -webkit-transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1650ms;
+  transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1650ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1650ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1650ms, -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1650ms;
+}
+
+.gto-bar:nth-child(13) .gto-bar-name {
+  -webkit-transition: opacity 200ms ease-out 1800ms;
+  transition: opacity 200ms ease-out 1800ms;
+}
+
+.gto-bar:nth-child(13) .gto-bar-background {
+  -webkit-transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1800ms;
+  transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1800ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1800ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1800ms, -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1800ms;
+}
+
+.gto-bar:nth-child(14) .gto-bar-name {
+  -webkit-transition: opacity 200ms ease-out 1950ms;
+  transition: opacity 200ms ease-out 1950ms;
+}
+
+.gto-bar:nth-child(14) .gto-bar-background {
+  -webkit-transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1950ms;
+  transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1950ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1950ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1950ms, -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 1950ms;
+}
+
+.gto-bar:nth-child(15) .gto-bar-name {
+  -webkit-transition: opacity 200ms ease-out 2100ms;
+  transition: opacity 200ms ease-out 2100ms;
+}
+
+.gto-bar:nth-child(15) .gto-bar-background {
+  -webkit-transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 2100ms;
+  transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 2100ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 2100ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 2100ms, -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 2100ms;
+}
+
+.gto-bar:nth-child(16) .gto-bar-name {
+  -webkit-transition: opacity 200ms ease-out 2250ms;
+  transition: opacity 200ms ease-out 2250ms;
+}
+
+.gto-bar:nth-child(16) .gto-bar-background {
+  -webkit-transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 2250ms;
+  transition: -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 2250ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 2250ms;
+  transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 2250ms, -webkit-transform 200ms cubic-bezier(0, 0, 0.56, 1.26) 2250ms;
+}
+
+.gto-bar-name {
+  font-weight: 400;
+  min-width: 254px;
+  text-align: right;
+  padding-right: 32px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  opacity: 0;
+}
+
+.gto-bar-border {
+  border-left: 1px solid #CCC;
+  padding-bottom: 8px;
+}
+
+.gto-bar-background {
+  color: white;
+  background-color: #9b5ea5;
+  padding-left: 8px;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.animated .gto-bar-name {
+  opacity: 1;
+}
+
+.animated .gto-bar-background {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.gt-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gt-content, .gt-rows {
+  width: 50%;
+}
+
+.gt-square {
+  width: -webkit-calc(100% / 10 - 16px);
+  width: calc(100% / 10 - 16px);
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.gt-square > div {
+  background-color: #509587;
+  padding-bottom: 100%;
+}
+
+.gt-square:nth-child(1) {
+  -webkit-transition: -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 0ms;
+  transition: -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 0ms;
+  transition: transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 0ms;
+  transition: transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 0ms, -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 0ms;
+}
+
+.gt-square:nth-child(2) {
+  -webkit-transition: -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 150ms;
+  transition: -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 150ms;
+  transition: transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 150ms;
+  transition: transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 150ms, -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 150ms;
+}
+
+.gt-square:nth-child(3) {
+  -webkit-transition: -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 300ms;
+  transition: -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 300ms;
+  transition: transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 300ms;
+  transition: transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 300ms, -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 300ms;
+}
+
+.gt-square:nth-child(4) {
+  -webkit-transition: -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 450ms;
+  transition: -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 450ms;
+  transition: transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 450ms;
+  transition: transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 450ms, -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 450ms;
+}
+
+.gt-square:nth-child(5) {
+  -webkit-transition: -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 600ms;
+  transition: -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 600ms;
+  transition: transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 600ms;
+  transition: transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 600ms, -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 600ms;
+}
+
+.gt-square:nth-child(6) {
+  -webkit-transition: -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 750ms;
+  transition: -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 750ms;
+  transition: transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 750ms;
+  transition: transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 750ms, -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 750ms;
+}
+
+.gt-square:nth-child(7) {
+  -webkit-transition: -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 900ms;
+  transition: -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 900ms;
+  transition: transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 900ms;
+  transition: transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 900ms, -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 900ms;
+}
+
+.gt-square:nth-child(8) {
+  -webkit-transition: -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 1050ms;
+  transition: -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 1050ms;
+  transition: transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 1050ms;
+  transition: transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 1050ms, -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 1050ms;
+}
+
+.gt-square:nth-child(9) {
+  -webkit-transition: -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 1200ms;
+  transition: -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 1200ms;
+  transition: transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 1200ms;
+  transition: transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 1200ms, -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 1200ms;
+}
+
+.gt-square:nth-child(10) {
+  -webkit-transition: -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 1350ms;
+  transition: -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 1350ms;
+  transition: transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 1350ms;
+  transition: transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 1350ms, -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 1350ms;
+}
+
+.gt-square:nth-child(11) {
+  -webkit-transition: -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 1500ms;
+  transition: -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 1500ms;
+  transition: transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 1500ms;
+  transition: transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 1500ms, -webkit-transform 150ms cubic-bezier(0, 0, 0.56, 1.26) 1500ms;
+}
+
+.gt-squares-row {
+  width: 100%;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gt-squares-row.animated .gt-square {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.gt-squares-row:nth-child(10) .gt-square div {
+  background-color: #9b5ea5;
+}
+
+.gt-squares-row:nth-child(9) .gt-square:nth-child(n+6) div {
+  background-color: #9b5ea5;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+}
+
+body {
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  color: black;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) and (max-width: 1059px) {
+  .container {
+    max-width: 688px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+.air-1 {
+  margin-bottom: 16px;
+}
+
+.air-2 {
+  margin-bottom: 32px;
+}
+
+.button {
+  padding: 16px 32px;
+  background-color: #9b5ea5;
+  margin: 0 auto;
+}
+
+.button-link {
+  color: white;
+  text-decoration: none;
+}
+
+.graph-title {
+  font-size: 42px;
+  line-height: 1.2em;
+  font-weight: bold;
+}
+
+.graph-subtitle {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.graph-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 767px) {
+  .graph-content {
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

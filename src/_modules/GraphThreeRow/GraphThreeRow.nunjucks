@@ -1,0 +1,35 @@
+{% macro content() %}
+
+  <div class="gt-squares-row wow">
+    <div class="gt-square">
+      <div></div>
+    </div>
+    <div class="gt-square">
+      <div></div>
+    </div>
+    <div class="gt-square">
+      <div></div>
+    </div>
+    <div class="gt-square">
+      <div></div>
+    </div>
+    <div class="gt-square">
+      <div></div>
+    </div>
+    <div class="gt-square">
+      <div></div>
+    </div>
+    <div class="gt-square">
+      <div></div>
+    </div>
+    <div class="gt-square">
+      <div></div>
+    </div>
+    <div class="gt-square">
+      <div></div>
+    </div>
+    <div class="gt-square">
+      <div></div>
+    </div>
+  </div>
+{% endmacro %}

@@ -1,0 +1,49 @@
+// graphone styles
+
+@import '../../_styles/variables';
+
+.gto-bar {
+  display: flex;
+  @for $i from 1 through 16 {
+    &:nth-child(#{$i}) {
+      .gto-bar {
+        &-name {
+          transition: opacity 200ms ease-out #{($i - 1) * 150ms};
+        }
+        &-background {
+          transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) #{($i - 1) * 150ms};
+        }
+      }
+    }
+  }
+  &-name {
+    font-weight: 400;
+    min-width: 254px;
+    text-align: right;
+    padding-right: #{$gutter * 2};
+    box-sizing: content-box;
+    opacity: 0;
+  }
+  &-border {
+    border-left: 1px solid #CCC;
+    padding-bottom: #{$gutter / 2};
+  }
+  &-background {
+    color: white;
+    background-color: $violet;
+    padding-left: #{$gutter / 2};
+    transform: scale(0, 1);
+    transform-origin: left;
+  }
+}
+
+.animated {
+  .gto-bar {
+    &-name {
+      opacity: 1;
+    }
+    &-background {
+      transform: scale(1, 1);
+    }
+  }
+}

@@ -1,0 +1,12 @@
+// graphone styles
+
+@import '../../_styles/variables';
+
+.gt {
+  &-flex {
+    display: flex;
+  }
+  &-content, &-rows {
+    width: 50%;
+  }
+}

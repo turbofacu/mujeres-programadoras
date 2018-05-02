@@ -1,0 +1,23 @@
+{% extends '_layouts/base.nunjucks' %}
+
+{% import "_modules/link/link.nunjucks" as link %}
+{% import "_modules/Hero/Hero.nunjucks" as Hero %}
+{% import "_modules/GraphOne/GraphOne.nunjucks" as GraphOne %}
+{% import "_modules/GraphTwo/GraphTwo.nunjucks" as GraphTwo %}
+{% import "_modules/GraphThree/GraphThree.nunjucks" as GraphThree %}
+
+{% block content %}
+<div class="main-container">
+  {# {{ Hero.content() }} #}
+
+  {{ GraphOne.content() }}
+  {{ GraphTwo.content() }}
+  {{ GraphThree.content() }}
+
+  {# {{link.content({
+    href: 'https://github.com/larsonjj/generator-yeogurt#yeogurt-generator---',
+    text: 'documentation'
+  })}} #}
+</div>
+
+{% endblock %}

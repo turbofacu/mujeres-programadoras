@@ -1,0 +1,76 @@
+{% import "_modules/GraphOneBar/GraphOneBar.nunjucks" as GraphOneBar %}
+
+{% macro content() %}
+
+  <div class="container">
+    <section class="graph graphOne">
+      <header class="graph-title-wrapper air-2">
+        <h1 class="graph-title air-1">Nuevas inscripciones en carreras de programación por género</h1>
+        <p class="graph-subtitle">Distribución por género. Datos entre 2010 y 2015</p>
+      </header>
+      <div class="graph-content">
+        <div class="go-bars-flex">
+          <div class="go-bars-left">
+            <div class="go-bars-quantity">20k</div>
+            <div class="go-bars-quantity">15k</div>
+            <div class="go-bars-quantity">10k</div>
+            <div class="go-bars-quantity">5k</div>
+            <div class="go-bars-quantity">0</div>
+          </div>
+          <div class="go-bars">
+            {{GraphOneBar.content({
+              year: '2010',
+              total: '77%',
+              percentageW: '17.18%',
+              percentageM: '82.82%',
+              delay: '200ms'
+            })}}
+            {{GraphOneBar.content({
+              year: '2011',
+              total: '84%',
+              percentageW: '16.23%',
+              percentageM: '83.77%',
+              delay: '400ms'
+            })}}
+            {{GraphOneBar.content({
+              year: '2012',
+              total: '82%',
+              percentageW: '15.82%',
+              percentageM: '84.18%',
+              delay: '600ms'
+            })}}
+            {{GraphOneBar.content({
+              year: '2013',
+              total: '72%',
+              percentageW: '15.99%',
+              percentageM: '84.01%',
+              delay: '800ms'
+            })}}
+            {{GraphOneBar.content({
+              year: '2014',
+              total: '74%',
+              percentageW: '15.81%',
+              percentageM: '84.19%',
+              delay: '1000ms'
+            })}}
+            {{GraphOneBar.content({
+              year: '2015',
+              total: '76%',
+              percentageW: '15.08%',
+              percentageM: '84.92%',
+              delay: '1200ms'
+            })}}
+          </div>
+        </div>
+        <div class="go-bars-bottom">
+          <div class="go-bars-year">2010</div>
+          <div class="go-bars-year">2011</div>
+          <div class="go-bars-year">2012</div>
+          <div class="go-bars-year">2013</div>
+          <div class="go-bars-year">2014</div>
+          <div class="go-bars-year">2015</div>
+        </div>
+      </div>
+    </section>
+  </div>
+{% endmacro %}

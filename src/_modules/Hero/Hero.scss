@@ -1,0 +1,28 @@
+// hero styles
+
+@import '../../_styles/variables';
+
+.hero {
+  background-color: #f8e71c;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &-content {
+    background-color: $violet;
+    padding: #{$gutter * 2};
+    @media(max-width: $mobileMax) {
+      padding: #{$gutter * 2} $gutter;
+    }
+  }
+  &-title {
+    font-size: 42px;
+    line-height: 1.6em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}

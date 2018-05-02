@@ -1,0 +1,28 @@
+{% import "_modules/GraphThreeRow/GraphThreeRow.nunjucks" as GraphThreeRow %}
+
+{% macro content() %}
+
+  <div class="container">
+    <section class="graph graphThree">
+      <header class="graph-title-wrapper air-2">
+        <h1 class="graph-title air-1">Inscripciones: Distribución por genero</h1>
+        <p class="graph-subtitle">Distribución por género. Datos entre 2010 y 2015</p>
+      </header>
+      <div class="gt-flex">
+        <div class="gt-content"></div>
+        <div class="gt-rows">
+          {{GraphThreeRow.content()}}
+          {{GraphThreeRow.content()}}
+          {{GraphThreeRow.content()}}
+          {{GraphThreeRow.content()}}
+          {{GraphThreeRow.content()}}
+          {{GraphThreeRow.content()}}
+          {{GraphThreeRow.content()}}
+          {{GraphThreeRow.content()}}
+          {{GraphThreeRow.content()}}
+          {{GraphThreeRow.content()}}
+        </div>
+      </div>
+    </section>
+  </div>
+{% endmacro %}

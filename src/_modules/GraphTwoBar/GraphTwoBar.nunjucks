@@ -1,0 +1,14 @@
+{% import "_modules/GraphThreeRow/GraphThreeRow.nunjucks" as GraphThreeRow %}
+
+{% macro content(content) %}
+
+  <div class="gto-bar">
+    <span class="gto-bar-name">{{content.name}}</span>
+    <div class="gto-bar-border" style="width: {{content.percentage}}">
+      <div class="gto-bar-background">
+        <span class="gto-bar-percentage">{{content.percentage}}</span>
+      </div>
+    </div>
+  </div>
+
+{% endmacro %}

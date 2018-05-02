@@ -1,0 +1,20 @@
+// graphone styles
+
+@import '../../_styles/variables';
+
+.gto {
+  &-top {
+    display: flex;
+    flex-direction: column;
+  }
+  &-bottom {
+    padding-left: 286px;
+    &-border {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding-top: $gutter;
+      border-top: 1px solid #CCC;
+    }
+  }
+}

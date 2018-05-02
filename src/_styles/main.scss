@@ -1,0 +1,83 @@
+// Normalize Styles
+// @import 'node_modules/normalize.css/normalize';
+
+@import 'variables';
+
+// Import Modules
+@import '../_modules/Hero/Hero';
+@import '../_modules/GraphOne/GraphOne';
+@import '../_modules/GraphOneBar/GraphOneBar';
+@import '../_modules/GraphTwo/GraphTwo';
+@import '../_modules/GraphTwoBar/GraphTwoBar';
+@import '../_modules/GraphThree/GraphThree';
+@import '../_modules/GraphThreeRow/GraphThreeRow';
+
+// Box sizing partial styles:
+// Apply a natural box layout model to all elements
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+}
+
+body {
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  color: black;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  @media(min-width: $tabletMin) and (max-width: $tabletMax) {
+    max-width: 688px;
+  }
+  @media(max-width: $mobileMax) {
+    padding: 0 10px;
+  }
+}
+
+.air-1 {
+  margin-bottom: #{$gutter};
+}
+
+.air-2 {
+  margin-bottom: #{$gutter * 2};
+}
+
+.button {
+  padding: $gutter #{$gutter * 2};
+  background-color: $violet;
+  margin: 0 auto;
+  &-link {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.graph {
+  &-title {
+    font-size: 42px;
+    line-height: 1.2em;
+    font-weight: bold;
+  }
+  &-subtitle {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  &-content {
+    display: flex;
+    flex-direction: column;
+    @media(max-width: $mobileMax) {
+      font-size: 12px;
+    }
+  }
+}

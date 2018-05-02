@@ -1,0 +1,85 @@
+{% import "_modules/GraphTwoBar/GraphTwoBar.nunjucks" as GraphTwoBar %}
+
+{% macro content() %}
+
+  <div class="container">
+    <section class="graph graphThree air-2">
+      <header class="graph-title-wrapper air-2">
+        <h1 class="graph-title air-1">Universidades con mayor presencia de mujeres</h1>
+        <p class="graph-subtitle">Sobre las 15 Universidades con mayor inscripciones entre 2010 y 2015</p>
+      </header>
+      <div class="gto-top wow">
+        {{GraphTwoBar.content({
+          name: 'U Nac. de La Rioja',
+          percentage: '25.94%'
+        })}}
+        {{GraphTwoBar.content({
+          name: 'U Nac. del Comahue',
+          percentage: '23.13%'
+        })}}
+        {{GraphTwoBar.content({
+          name: 'Univ Nac. de Jujuy',
+          percentage: '21.68%'
+        })}}
+        {{GraphTwoBar.content({
+          name: 'U Nac. de Salta',
+          percentage: '21.52%'
+        })}}
+        {{GraphTwoBar.content({
+          name: 'U Nac. de Tucumán',
+          percentage: '18.61%'
+        })}}
+        {{GraphTwoBar.content({
+          name: 'U Nac. Arturo de Jauretche',
+          percentage: '17.91%'
+        })}}
+        {{GraphTwoBar.content({
+          name: 'U de Buenos Aires',
+          percentage: '17.08%'
+        })}}
+        {{GraphTwoBar.content({
+          name: 'U de La Matanza',
+          percentage: '15.82%'
+        })}}
+        {{GraphTwoBar.content({
+          name: 'U Nac. de La Plata',
+          percentage: '15.18%'
+        })}}
+        {{GraphTwoBar.content({
+          name: 'U Tec. Nacional',
+          percentage: '14.60%'
+        })}}
+        {{GraphTwoBar.content({
+          name: 'U Nac. de Córdoba',
+          percentage: '14.34%'
+        })}}
+        {{GraphTwoBar.content({
+          name: 'U Emp. Siglo 21',
+          percentage: '13.58%'
+        })}}
+        {{GraphTwoBar.content({
+          name: 'U Abierta Interamericana',
+          percentage: '13.22%'
+        })}}
+        {{GraphTwoBar.content({
+          name: 'U Aut. de Entre Ríos',
+          percentage: '12.77%'
+        })}}
+        {{GraphTwoBar.content({
+          name: 'U Arg. de la Empresa',
+          percentage: '11.49%'
+        })}}
+      </div>
+      <div class="gto-bottom">
+        <div class="gto-bottom-border">
+          <span class="gto-percentage">0</span>
+          <span class="gto-percentage">20</span>
+          <span class="gto-percentage">40</span>
+          <span class="gto-percentage">60</span>
+          <span class="gto-percentage">80</span>
+          <span class="gto-percentage">100</span>
+        </div>
+      </div>
+    </section>
+  </div>
+{% endmacro %}

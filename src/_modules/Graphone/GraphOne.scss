@@ -1,0 +1,67 @@
+// graphone styles
+
+@import '../../_styles/variables';
+
+.graph {
+  &One {
+    margin-bottom: 50px;
+    .graph-content {
+      display: flex;
+      flex-direction: column;
+      @media(max-width: $mobileMax) {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.go-bars {
+  width: calc(100% - 72px);
+  padding-left: #{$gutter * 2};
+  display: flex;
+  justify-content: space-between;
+  @media(max-width: $tabletMax) {
+    padding-left: $gutter;
+  }
+  @media(max-width: $mobileMax) {
+    width: calc(100% - 32px);
+    padding-left: #{$gutter / 2};
+  }
+  &-flex {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-left {
+    color: black;
+    width: 72px;
+    height: 600px;
+    padding: 0 $gutter 0 0;
+    border-right: 2px solid #CCC;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    @media(max-width: $mobileMax) {
+      width: 32px;
+      padding: 0 #{$gutter / 2} 0 0;
+    }
+  }
+  &-bottom {
+    color: black;
+    width: calc(100% - 70px);
+    padding: $gutter 0 0 #{$gutter * 2 + 2};
+    border-top: 2px solid #CCC;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    @media(max-width: $mobileMax) {
+      width: calc(100% - 30px);
+    }
+  }
+  &-year {
+    width: 13.3333%;
+    text-align: center;
+  }
+}

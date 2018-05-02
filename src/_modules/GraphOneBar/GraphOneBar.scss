@@ -1,0 +1,79 @@
+// graphonebar styles
+
+.go-bar {
+  width: calc((100% / 6) - #{$gutter} * 2);
+  position: relative;
+  @media(max-width: $tabletMax) {
+    width: calc((100% / 6) - #{$gutter});
+  }
+  @media(max-width: $mobileMax) {
+    width: calc((100% / 6) - #{$gutter / 2});
+  }
+  @for $i from 1 through 7 {
+    &:nth-child(#{$i}) {
+      .go-bar {
+        &-men {
+          transition: transform 500ms cubic-bezier(0, 0, 0.56, 1.26) #{($i - 1) * 250ms};
+        }
+        &-women {
+          transition: transform 250ms cubic-bezier(0, 0, 0.56, 1.26) #{$i * 250ms};
+        }
+        &-percentage {
+          transition: opacity 250ms ease-out #{$i * 250ms};
+        }
+      }
+    }
+  }
+  &.animated {
+    .go-bar {
+      &-men, &-women {
+        transform: scale(1, 1);
+      }
+      &-percentage {
+        opacity: 1;
+      }
+    }
+  }
+  &-top {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+  &-men {
+    background-color: $green;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transform: scale(1, 0);
+    transform-origin: bottom;
+  }
+  &-women {
+    color: white;
+    text-align: center;
+    background-color: $violet;
+    width: 100%;
+    padding-bottom: $gutter;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: scale(1, 0);
+    transform-origin: bottom;
+  }
+  &-percentage {
+    opacity: 0;
+  }
+  &-year {
+    color: black;
+  }
+}

@@ -1,0 +1,12 @@
+{% macro content(content) %}
+
+<div class="go-bar wow" data-wow-delay="{{content.delay}}">
+  <div class="go-bar-top" style="height: {{content.total}}">
+    <div class="go-bar-men"></div>
+    <div class="go-bar-women" style="top: {{content.percentageM}}">
+      <span class="go-bar-percentage">{{content.percentageW}}</span>
+    </div>
+  </div>
+</div>
+
+{% endmacro %}

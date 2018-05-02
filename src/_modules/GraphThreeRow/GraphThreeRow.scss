@@ -1,0 +1,56 @@
+// graphone styles
+
+@import '../../_styles/variables';
+
+.gt {
+  &-square {
+    width: calc(100% / 10 - #{$gutter});
+    transform: scale(0, 1);
+    transform-origin: center;
+    > div {
+      background-color: $green;
+      padding-bottom: 100%;
+    }
+    @for $x from 1 through 11 {
+      &:nth-child(#{$x}) {
+        transition: transform 150ms cubic-bezier(0, 0, 0.56, 1.26) #{($x - 1) *  150ms};
+      }
+    }
+  }
+  &-squares {
+    &-row {
+      width: 100%;
+      margin-bottom: $gutter;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      &.animated {
+        .gt {
+          &-square {
+            transform: scale(1, 1);
+          }
+        }
+      }
+      &:nth-child(10) {
+        .gt {
+          &-square {
+            div {
+              background-color: $violet;
+            }
+          }
+        }
+      }
+      &:nth-child(9) {
+        .gt {
+          &-square {
+            &:nth-child(n+6) {
+              div {
+                background-color: $violet;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -70,7 +70,7 @@
           percentage: '11.49%'
         })}}
       </div>
-      <div class="gto-bottom">
+      <div class="gto-bottom air-3">
         <div class="gto-bottom-border">
           <span class="gto-percentage">0</span>
           <span class="gto-percentage">20</span>
@@ -79,6 +79,9 @@
           <span class="gto-percentage">80</span>
           <span class="gto-percentage">100</span>
         </div>
+      </div>
+      <div class="graph-text">
+        <p>En el ranking de las 15 instituciones educativas con más inscripciones totales, las universidades más grandes del país a pesar de tener mayores inscripciones cuentan con un porcentaje de mujeres inscriptas que no superan el 17%. Mientras que la Universidad Nacional de La Rioja encabeza el ranking de aquellas con mayor porcentaje de mujeres: un 26%; seguida por la Universidad Nacional del Comahue con un 23% y la Universidad Nacional de Jujuy con un 22%.</p>
       </div>
     </section>
   </div>

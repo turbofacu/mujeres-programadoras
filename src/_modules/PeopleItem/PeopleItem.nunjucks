@@ -1,0 +1,13 @@
+{% macro content(content) %}
+
+<li class="people-item">
+  <div class="people-container">
+    <img class="people-avatar" src="images/people/{{content.src}}.jpg" alt="Foto de {{content.name}}" />
+    <div class="people-content">
+      <span class="people-name">{{content.name}}</span>
+      <span class="people-team">{{content.team}}</span>
+    </div>
+  </div>
+</li>
+
+{% endmacro %}

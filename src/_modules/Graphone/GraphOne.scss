@@ -13,6 +13,15 @@
       }
     }
   }
+  &-text {
+    color: white;
+    background-color: $violet;
+    background-image: url('../images/search.svg');
+    background-repeat: no-repeat;
+    background-size: $gutter;
+    background-position: calc(100% - #{$gutter}) $gutter;
+    padding: #{$gutter * 2};
+  }
 }
 
 .go-bars {

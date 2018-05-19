@@ -8,7 +8,7 @@
         <h1 class="graph-title air-1">Nuevas inscripciones en carreras de programación por género</h1>
         <p class="graph-subtitle">Distribución por género. Datos entre 2010 y 2015</p>
       </header>
-      <div class="graph-content">
+      <div class="graph-content air-3">
         <div class="go-bars-flex">
           <div class="go-bars-left">
             <div class="go-bars-quantity">20k</div>
@@ -70,6 +70,9 @@
           <div class="go-bars-year">2014</div>
           <div class="go-bars-year">2015</div>
         </div>
+      </div>
+      <div class="graph-text">
+        <p>En el período 2010-2015, y en el caso de las universidades que informaron datos desagregados por género en sus carreras, se registraron 102.800 nuevas inscripciones en carreras relacionadas con Programación. De este total el 16,02% corresponden a ingresos de mujeres y 83,98% a varones.</p>
       </div>
     </section>
   </div>

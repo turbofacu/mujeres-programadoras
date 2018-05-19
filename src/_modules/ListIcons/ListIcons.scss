@@ -1,0 +1,33 @@
+@import '../../_styles/variables';
+
+.list-icons {
+  display: flex;
+  justify-content: space-between;
+  @media(max-width: $mobileMax) {
+    flex-direction: column;
+  }
+  &-section {
+    background-color: yellow;
+    padding: #{$gutter * 7} 0;
+  }
+  &-item {
+    @media(min-width: $tabletMin) {
+      width: 30%;
+    }
+    &:not(:last-child) {
+      @media(max-width: $mobileMax) {
+        margin-bottom: #{$gutter * 2}
+      }
+    }
+  }
+  &-svg {
+    width: auto;
+    height: 70px;
+  }
+  &-number {
+    font-size: 42px;
+    line-height: 42px;
+    font-weight: bold;
+    display: block;
+  }
+}

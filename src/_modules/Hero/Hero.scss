@@ -3,14 +3,29 @@
 @import '../../_styles/variables';
 
 .hero {
-  background-color: #f8e71c;
+  background-color: white;
+  background-image: url('/images/hero.jpg');
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  &:before {
+    content: '';
+    background-color: rgba(black, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
   &-content {
-    background-color: $violet;
+    color: white;
+    background-color: rgba($violet, 0.9);
     padding: #{$gutter * 2};
+    border-radius: $radius;
+    box-shadow: 0 4px 14px 0 rgba(255, 255, 255, 0.2);
+    position: relative;
+    z-index: 2;
     @media(max-width: $mobileMax) {
       padding: #{$gutter * 2} $gutter;
     }
@@ -18,11 +33,14 @@
   &-title {
     font-size: 42px;
     line-height: 1.6em;
+    letter-spacing: 1px;
     text-align: center;
     text-transform: uppercase;
   }
   &-buttons {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    z-index: 2;
   }
 }

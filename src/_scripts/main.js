@@ -4,6 +4,23 @@
 'use strict';
 
 var $ = require('jquery');
+var Swiper = require('../_scripts/swiper');
+
+var mySwiper = new Swiper ('.swiper-container', {
+  slidesPerView: 3,
+  spaceBetween: 24,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  fadeEffect: {
+    crossFade: true
+  },
+});
 
 var WOW = require('../_scripts/wow.js').WOW;
 

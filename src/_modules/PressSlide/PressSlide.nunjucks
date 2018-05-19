@@ -1,0 +1,16 @@
+{% import "_modules/PeopleItem/PeopleItem.nunjucks" as PeopleItem %}
+
+{% macro content(content) %}
+
+<div class="press-slide swiper-slide">
+  <a class="press-slide-wrapper" href="{{content.href}}" target="_blank">
+    <div class="press-slide-media-wrapper">
+      <img class="press-slide-media" src="images/press/{{content.src}}.png" alt="Tapa de la nota de sobre Mujeres en Programación en {{content.alt}}" />
+    </div>
+    <div class="press-slide-content">
+      <span class="press-slide-text">{{content.alt}}</span>
+    </div>
+  </a>
+</div>
+
+{% endmacro %}

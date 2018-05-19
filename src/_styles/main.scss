@@ -2,15 +2,20 @@
 // @import 'node_modules/normalize.css/normalize';
 
 @import 'variables';
+@import '../_styles/swiper';
 
 // Import Modules
 @import '../_modules/Hero/Hero';
+@import '../_modules/ListIcons/ListIcons';
 @import '../_modules/GraphOne/GraphOne';
 @import '../_modules/GraphOneBar/GraphOneBar';
 @import '../_modules/GraphTwo/GraphTwo';
 @import '../_modules/GraphTwoBar/GraphTwoBar';
 @import '../_modules/GraphThree/GraphThree';
 @import '../_modules/GraphThreeRow/GraphThreeRow';
+@import '../_modules/TeamPeople/TeamPeople';
+@import '../_modules/PeopleItem/PeopleItem';
+@import '../_modules/PressSlide/PressSlide';
 
 // Box sizing partial styles:
 // Apply a natural box layout model to all elements
@@ -29,13 +34,17 @@
 body {
   font-family: 'Montserrat', Helvetica, sans-serif;
   color: black;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6em;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
   width: 100%;
-  max-width: 960px;
+  max-width: 1170px;
   margin: 0 auto;
   @media(min-width: $tabletMin) and (max-width: $tabletMax) {
     max-width: 688px;
@@ -53,10 +62,29 @@ body {
   margin-bottom: #{$gutter * 2};
 }
 
+.air-3 {
+  margin-bottom: #{$gutter * 3};
+}
+
+.air-4 {
+  margin-bottom: #{$gutter * 4};
+}
+
+.text-center {
+  text-align: center;
+}
+
 .button {
   padding: $gutter #{$gutter * 2};
   background-color: $violet;
   margin: 0 auto;
+  box-shadow: 0 4px 14px 0 rgba(255, 255, 255, 0.1);
+  transition: box-shadow 500ms ease-out, transform 500ms cubic-bezier(0, 0, 0.47, 1.46);
+  cursor: pointer;
+  &:hover {
+    transform: translate3d(0, -2px, 0);
+    box-shadow: 0 4px 14px 0 rgba(255, 255, 255, 0.3);
+  }
   &-link {
     color: white;
     text-decoration: none;

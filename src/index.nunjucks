@@ -2,17 +2,27 @@
 
 {% import "_modules/link/link.nunjucks" as link %}
 {% import "_modules/Hero/Hero.nunjucks" as Hero %}
+{% import "_modules/ListIcons/ListIcons.nunjucks" as List %}
 {% import "_modules/GraphOne/GraphOne.nunjucks" as GraphOne %}
 {% import "_modules/GraphTwo/GraphTwo.nunjucks" as GraphTwo %}
 {% import "_modules/GraphThree/GraphThree.nunjucks" as GraphThree %}
+{% import "_modules/TeamPeople/TeamPeople.nunjucks" as TeamPeople %}
+{% import "_modules/CollaboratorsPeople/CollaboratorsPeople.nunjucks" as CollaboratorsPeople %}
+{% import "_modules/Press/Press.nunjucks" as Press %}
 
 {% block content %}
 <div class="main-container">
-  {# {{ Hero.content() }} #}
+
+  {{ Hero.content() }}
+
+  {{ List.content() }}
 
   {{ GraphOne.content() }}
   {{ GraphTwo.content() }}
   {{ GraphThree.content() }}
+  {{ TeamPeople.content() }}
+  {{ CollaboratorsPeople.content() }}
+  {{ Press.content() }}
 
   {# {{link.content({
     href: 'https://github.com/larsonjj/generator-yeogurt#yeogurt-generator---',

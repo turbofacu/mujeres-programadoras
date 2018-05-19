@@ -1,0 +1,36 @@
+{% import "_modules/PeopleItem/PeopleItem.nunjucks" as PeopleItem %}
+
+{% macro content() %}
+
+<section class="people-section air-3">
+  <div class="container">
+    <header class="people-header">
+      <h1 class="people-title">Colaboradores</h1>
+      <span class="people-subtitle">Equipo ampliado de Chicas en Tecnología y Medallia que trabajó en la definición.</span>
+    </header>
+    <ul class="people-list">
+      {{PeopleItem.content({
+        src: 'perez',
+        name: 'Ignacio Pérez',
+        team: 'Equipo Medalia'
+      })}}
+      {{PeopleItem.content({
+        src: 'dubiau',
+        name: 'Luciana Dubiau',
+        team: 'Equipo Medalia'
+      })}}
+      {{PeopleItem.content({
+        src: 'varela',
+        name: 'Mariana Varela',
+        team: 'Equipo Chicas en Tecnología'
+      })}}
+      {{PeopleItem.content({
+        src: 'paparella',
+        name: 'Yanina Paparella',
+        team: 'Equipo Chicas en Tecnología'
+      })}}
+    </ul>
+  </div>
+</section>
+
+{% endmacro %}

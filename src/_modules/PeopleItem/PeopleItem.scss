@@ -6,30 +6,27 @@
     width: 23%;
     margin-bottom: #{$gutter * 2};
     padding: #{$gutter + 3} #{$gutter};
-    border-radius: 4px;
     position: relative;
-    transition: background-color 500ms ease-out;
-    &:before {
-      content: '';
-      background-color: white;
-      border-radius: 4px;
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      opacity: 0;
-      transition: opacity 750ms ease-out, transform 500ms ease-out;
-    }
+    transition: all 500ms ease-out, background-color 250ms ease-out;
+    overflow: hidden;
+    cursor: pointer;
     &:hover {
       background-color: $violet;
+      transform: translate3d(0, -2px, 0);
       &:before {
-        opacity: 0.2;
-        transform: translate3d(#{$gutter / 2}, #{$gutter / 2}, 0);
+        opacity: 1;
       }
       .people {
-        &-name {
+        &-name, &-team {
           color: white;
+        }
+        &-twitter {
+          fill: $yellow;
+        }
+        &-avatar-wrapper {
+          &:before, &:after {
+            background-color: $yellow;
+          }
         }
       }
     }
@@ -43,23 +40,65 @@
     z-index: 2;
   }
   &-avatar {
-    width: 100px;
     height: auto;
-    border-radius: 4px;
-    border: 1px solid darken($violet, 10%);
+    width: 135px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 4px 4px 0 rgba(45, 45, 45, 0.1);
+    vertical-align: middle;
+    &-wrapper {
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      margin-bottom: $gutter;
+      &:before, &:after {
+        content: '';
+        background-color: $violet;
+        height: 5px;
+        position: absolute;
+        box-shadow: 0 4px 4px 0 rgba(45, 45, 45, 0.1);
+        transition: all 100ms ease-out;
+      }
+      &:before {
+        bottom: #{$gutter / 2};
+        left: $gutter;
+        right: #{$gutter * -1};
+      }
+      &:after {
+        content: '';
+        top: #{$gutter / 2};
+        left: #{$gutter * -1};
+        right: $gutter;
+        z-index: 3;
+      }
+    }
   }
   &-content {
-    padding: $gutter;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  &-name, &-team {
+    text-align: center;
+    transition: color 250ms ease-out;
+  }
   &-name {
     color: $violet;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
-    transition: color 500ms ease-out;
+  }
+  &-team {
+    font-size: 13px;
+    line-height: 13px;
+    font-weight: 300;
+  }
+  &-twitter {
+    fill: $violet;
+    width: 32px;
+    height: auto;
+    margin-top: $gutter;
+    transition: fill 250ms ease-out;
   }
 }
 

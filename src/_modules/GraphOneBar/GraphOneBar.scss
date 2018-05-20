@@ -13,13 +13,13 @@
     &:nth-child(#{$i}) {
       .go-bar {
         &-men {
-          transition: transform 500ms cubic-bezier(0, 0, 0.56, 1.26) #{($i - 1) * 250ms};
+          transition: transform 1.5s cubic-bezier(0, 0, 0.56, 1.26) #{($i - 1) * 750ms};
         }
         &-women {
-          transition: transform 250ms cubic-bezier(0, 0, 0.56, 1.26) #{$i * 250ms};
+          transition: transform 750ms cubic-bezier(0, 0, 0.56, 1.26) #{$i * 750ms};
         }
         &-percentage {
-          transition: opacity 250ms ease-out #{$i * 250ms};
+          transition: opacity 750ms ease-out #{$i * 750ms};
         }
       }
     }
@@ -74,6 +74,6 @@
     opacity: 0;
   }
   &-year {
-    color: black;
+    color: $black;
   }
 }

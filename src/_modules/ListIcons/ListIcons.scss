@@ -7,7 +7,7 @@
     flex-direction: column;
   }
   &-section {
-    background-color: yellow;
+    background-color: $yellow;
     padding: #{$gutter * 7} 0;
   }
   &-item {
@@ -21,10 +21,12 @@
     }
   }
   &-svg {
+    fill: $violet;
     width: auto;
     height: 70px;
   }
   &-number {
+    color: $violet;
     font-size: 42px;
     line-height: 42px;
     font-weight: bold;

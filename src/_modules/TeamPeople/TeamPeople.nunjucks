@@ -4,9 +4,11 @@
 
 <section class="people-section air-3">
   <div class="container">
-    <header class="people-header">
-      <h1 class="people-title">El Equipo</h1>
-      <span class="people-subtitle">Equipo ampliado de Chicas en Tecnología y Medallia que trabajó en la definición.</span>
+    <header class="people-header air-3">
+      <h1 class="section-title people-title">
+        <div class="section-title-trick"><span class="section-title-word">El Equipo<span></div>
+      </h1>
+      <span class="section-subtitle people-subtitle">Equipo ampliado de Chicas en Tecnología y Medallia que trabajó en la definición.</span>
     </header>
     <ul class="people-list">
       {{PeopleItem.content({

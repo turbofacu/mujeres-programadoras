@@ -43,7 +43,7 @@
     justify-content: space-between;
   }
   &-left {
-    color: black;
+    color: $black;
     width: 72px;
     height: 600px;
     padding: 0 $gutter 0 0;
@@ -58,7 +58,7 @@
     }
   }
   &-bottom {
-    color: black;
+    color: $black;
     width: calc(100% - 70px);
     padding: $gutter 0 0 #{$gutter * 2 + 2};
     border-top: 2px solid #CCC;

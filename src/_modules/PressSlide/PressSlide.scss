@@ -3,6 +3,15 @@
 .press-slide {
   &-wrapper {
     display: block;
+    transition: all 500ms ease-out;
+    cursor: pointer;
+    &:hover {
+      transform: translate3d(0, -2px, 0);
+      .press-slide-text {
+        background-color: $yellow;
+        color: $black;
+      }
+    }
   }
   &-media {
     width: 100%;
@@ -20,9 +29,10 @@
     }
   }
   &-text {
-    display: block;
     color: white;
     background-color: $violet;
     padding: $gutter;
+    display: block;
+    transition: all 200ms ease-out;
   }
 }

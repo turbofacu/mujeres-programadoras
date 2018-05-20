@@ -33,7 +33,7 @@
 
 body {
   font-family: 'Montserrat', Helvetica, sans-serif;
-  color: black;
+  color: $black;
   font-size: 18px;
   line-height: 1.6em;
 }
@@ -72,6 +72,45 @@ a {
 
 .text-center {
   text-align: center;
+}
+
+.section {
+  &-subtitle {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  &-title {
+    margin-bottom: $gutter;
+    &-trick {
+      display: inline-block;
+      position: relative;
+      &:before, &:after {
+        content: '';
+        background-color: $yellow;
+        height: 5px;
+        position: absolute;
+        box-shadow: 0 4px 4px 0 rgba(45, 45, 45, 0.1);
+      }
+      &:before {
+        bottom: #{$gutter / 2};
+        left: $gutter;
+        right: #{$gutter * -1};
+      }
+      &:after {
+        content: '';
+        top: #{$gutter / 2};
+        left: #{$gutter * -1};
+        right: $gutter;
+        z-index: 3;
+      }
+    }
+    &-word {
+      font-size: 52px;
+      font-weight: bold;
+      position: relative;
+      z-index: 2;
+    }
+  }
 }
 
 .button {

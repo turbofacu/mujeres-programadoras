@@ -4,8 +4,10 @@
 
 <section class="press-section air-3">
   <div class="container">
-    <header class="press-header">
-      <h1 class="press-title">Prensa</h1>
+  <header class="people-header air-3">
+      <h1 class="section-title people-title">
+        <div class="section-title-trick"><span class="section-title-word">Prensa<span></div>
+      </h1>
     </header>
       <div class="swiper-container">
         <div class="swiper-wrapper">

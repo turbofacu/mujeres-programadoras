@@ -1,0 +1,54 @@
+// hero styles
+
+@import '../../_styles/variables';
+
+.graph-data {
+  margin: 0 auto;
+  @extend %trick;
+  @extend %trick-special;
+  @extend %trick-yellow;
+  opacity: 0;
+  transform: translate3d(0, 10px, 0);
+  transition: all 500ms ease-out 250ms;
+  @media(min-width: $desktopMin) {
+    max-width: 60%;
+  }
+  &.animated {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  &-content {
+    color: white;
+    background-color: $violet;
+    padding: $gutter;
+    position: relative;
+    z-index: 2;
+    @media(min-width: $tabletMin) {
+      padding: #{$gutter * 2};
+    }
+  }
+  &-title {
+    color: $yellow;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: #{$gutter / 2};
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      margin-bottom: $gutter;
+    }
+  }
+  &-svg {
+    fill: $yellow;
+    &-circle {
+      animation: eyePulse 2s linear infinite;
+      transform-origin: center center;
+    }
+  }
+}
+
+@keyframes eyePulse {
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+}

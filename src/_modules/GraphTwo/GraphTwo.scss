@@ -9,6 +9,9 @@
   }
   &-bottom {
     padding-left: 286px;
+    @media(max-width: $mobileMax) {
+      display: none;
+    }
     &-border {
       display: flex;
       justify-content: space-between;

@@ -2,17 +2,22 @@
 // @import 'node_modules/normalize.css/normalize';
 
 @import 'variables';
+@import 'extends';
 @import '../_styles/swiper';
 
 // Import Modules
 @import '../_modules/Hero/Hero';
+@import '../_modules/SectionTitle/SectionTitle';
 @import '../_modules/ListIcons/ListIcons';
+@import '../_modules/GraphData/GraphData';
 @import '../_modules/GraphOne/GraphOne';
 @import '../_modules/GraphOneBar/GraphOneBar';
 @import '../_modules/GraphTwo/GraphTwo';
 @import '../_modules/GraphTwoBar/GraphTwoBar';
 @import '../_modules/GraphThree/GraphThree';
 @import '../_modules/GraphThreeRow/GraphThreeRow';
+@import '../_modules/Banner/Banner';
+@import '../_modules/QuotesSlide/QuotesSlide';
 @import '../_modules/TeamPeople/TeamPeople';
 @import '../_modules/PeopleItem/PeopleItem';
 @import '../_modules/PressSlide/PressSlide';
@@ -46,13 +51,23 @@ a {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
+  @media(max-width: 1200px) {
+    max-width: 970px;
+  }
   @media(min-width: $tabletMin) and (max-width: $tabletMax) {
     max-width: 688px;
   }
   @media(max-width: $mobileMax) {
-    padding: 0 10px;
+    padding: 0 $gutter;
+  }
+  &-text {
+    @media(min-width: $desktopMin) {
+      max-width: 60%;
+      margin: 0 auto;
+    }
   }
 }
+
 
 .air-1 {
   margin-bottom: #{$gutter};
@@ -74,59 +89,66 @@ a {
   text-align: center;
 }
 
-.section {
-  &-subtitle {
-    font-size: 20px;
-    font-weight: 300;
-  }
-  &-title {
-    margin-bottom: $gutter;
-    &-trick {
-      display: inline-block;
-      position: relative;
-      &:before, &:after {
-        content: '';
-        background-color: $yellow;
-        height: 5px;
-        position: absolute;
-        box-shadow: 0 4px 4px 0 rgba(45, 45, 45, 0.1);
-      }
-      &:before {
-        bottom: #{$gutter / 2};
-        left: $gutter;
-        right: #{$gutter * -1};
-      }
-      &:after {
-        content: '';
-        top: #{$gutter / 2};
-        left: #{$gutter * -1};
-        right: $gutter;
-        z-index: 3;
-      }
-    }
-    &-word {
-      font-size: 52px;
-      font-weight: bold;
-      position: relative;
-      z-index: 2;
-    }
-  }
-}
-
 .button {
-  padding: $gutter #{$gutter * 2};
-  background-color: $violet;
   margin: 0 auto;
-  box-shadow: 0 4px 14px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: $shadow;
   transition: box-shadow 500ms ease-out, transform 500ms cubic-bezier(0, 0, 0.47, 1.46);
   cursor: pointer;
+  position: relative;
+  @extend %trick;
+  @extend %trick-hover;
+  @extend %elevate;
+  @media(max-width: $mobileMax) {
+    margin-bottom: #{$gutter * 2};
+  }
   &:hover {
     transform: translate3d(0, -2px, 0);
-    box-shadow: 0 4px 14px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: $shadow;
+  }
+  &.violet {
+    .button-link {
+      background-color: $violet;
+    }
+    &:before, &:after {
+      background-color: $yellow;
+    }
+    &:hover {
+      &:before, &:after {
+        background-color: $violet;
+      }
+      .button-link {
+        background-color: $yellow;
+        color: $black;
+      }
+    }
+  }
+  &.yellow {
+    .button-link {
+      color: $black;
+      background-color: $yellow;
+    }
+    &:before, &:after {
+      background-color: $violet;
+    }
+    &:hover {
+      &:before, &:after {
+        background-color: $yellow;
+      }
+      .button-link {
+        background-color: $violet;
+        color: white;
+      }
+    }
   }
   &-link {
+    display: block;
     color: white;
+    background-color: $violet;
+    padding: $gutter #{$gutter * 2};
     text-decoration: none;
+    position: relative;
+    z-index: 2;
+    transition: all 250ms ease-out;
   }
 }
 
@@ -135,10 +157,19 @@ a {
     font-size: 42px;
     line-height: 1.2em;
     font-weight: bold;
+    @media(max-width: $tabletMax) {
+      font-size: 32px;
+    }
+    @media(max-width: $mobileMax) {
+      font-size: 24px;
+    }
   }
   &-subtitle {
     font-size: 20px;
     font-weight: 300;
+    @media(max-width: $mobileMax) {
+      font-size: 16px;
+    }
   }
   &-content {
     display: flex;

@@ -1,0 +1,39 @@
+{% import "_modules/SectionTitle/SectionTitle.nunjucks" as SectionTitle %}
+{% import "_modules/QuotesSlide/QuotesSlide.nunjucks" as QuoteSlide %}
+
+{% macro content() %}
+
+<section class="quotes-section air-3">
+  <div class="container">
+    {{SectionTitle.content({
+      title: '¿Por qué es importante?'
+    })}}
+    <div class="swiper-container quotes-swiper">
+      <div class="swiper-wrapper">
+        {{QuoteSlide.content({
+          src: 'masnatta',
+          name: 'Melina Masnatta',
+          team: 'Co-fundadora y directora ejecutiva, Chicas en Tecnología',
+          text: 'En ‘Chicas en Tecnología’ venimos trabajando para cerrar la brecha de género desde nuestra fundación, principalmente a través de nuestros programas e iniciativas orientadas a mujeres adolescentes, pero no podemos saber el impacto sin datos. En Argentina, hasta el momento no existía una base de datos pública y abierta de los y las estudiantes de carreras relacionadas a la programación en todo el país, y esta información es necesaria para dejar de lado las percepciones y trabajar sobre números, datos precisos para saber dónde y cómo mejorar.'
+        })}}
+        {{QuoteSlide.content({
+          src: 'hadad',
+          name: 'Carolina Hadad',
+          team: 'Co-fundadora, Chicas en Tecnología',
+          text: 'Desde Chicas en Tecnología tenemos una forma de trabajo abierta y basada en datos concretos para medir la efectividad de nuestros programas, por eso creemos súper importante que esta información esté disponible para que cualquiera pueda analizarla y sacar sus propias conclusiones. Esta iniciativa no puede ser aislada sino que queremos que estos datos se publiquen periódicamente. De esta manera la comunidad en general puede analizarlos, cruzarlos con diferentes fuentes y análisis distintos a los que hicimos nosotras.'
+        })}}
+        {{QuoteSlide.content({
+          src: 'ceria',
+          name: 'Santiago Ceria',
+          team: 'President, Medallia Argentina',
+          text: 'El sector de software y servicios informáticos es uno de los más dinámicos del país, y ya genera más de 1700 millones de dólares por año en exportaciones. La baja participación femenina hace que se pierdan muchas oportunidades de generación de riqueza, porque la industria necesita de personas calificadas para seguir creciendo. Sin embargo, el problema más grave desde mi punto de vista es de la diversidad. Estas tecnologías están cambiando al mundo, y ese cambio necesita de la participación femenina.'
+        })}}
+
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endmacro %}

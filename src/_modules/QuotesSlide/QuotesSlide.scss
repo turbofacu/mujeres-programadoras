@@ -1,0 +1,46 @@
+@import '../../_styles/variables';
+
+.quotes-slide {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  &-avatar {
+    height: auto;
+    width: 200px;
+    position: relative;
+    z-index: 2;
+    box-shadow: $shadow;
+    vertical-align: middle;
+    &-wrapper {
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: $gutter;
+      @extend %trick;
+      @extend %trick-yellow;
+    }
+  }
+  &-trick {
+    @extend %trick;
+    @extend %trick-special;
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  &-content {
+    background-color: $yellow;
+    padding: #{$gutter * 2};
+    position: relative;
+    z-index: 2;
+    @media (min-width: $tabletMin) {
+      padding: #{$gutter * 2};
+    }
+  }
+  &-name, &-team {
+    font-weight: bold;
+    text-align: center;
+    display: block;
+  }
+  &-name {
+    color: $violet;
+    font-size: 22px;
+  }
+}

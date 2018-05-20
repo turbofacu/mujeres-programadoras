@@ -2,20 +2,23 @@
 
 .people {
   &-item {
-    background-color: #f5f5f5;
-    width: 23%;
+    background-color: $greyW;
+    width: 100%;
     margin-bottom: #{$gutter * 2};
     padding: #{$gutter + 3} #{$gutter};
     position: relative;
-    transition: all 500ms ease-out, background-color 250ms ease-out;
+    transition: all 250ms ease-out !important;
     overflow: hidden;
     cursor: pointer;
+    @extend %elevate;
+    @media(min-width: $tabletMin) {
+      width: calc(50% - #{$gutter});
+    }
+    @media(min-width: $desktopMin) {
+      width: calc(25% - #{$gutter * 1.5});
+    }
     &:hover {
       background-color: $violet;
-      transform: translate3d(0, -2px, 0);
-      &:before {
-        opacity: 1;
-      }
       .people {
         &-name, &-team {
           color: white;
@@ -26,6 +29,12 @@
         &-avatar-wrapper {
           &:before, &:after {
             background-color: $yellow;
+          }
+          &:before {
+            transform: translate3d(-100%, 0, 0);
+          }
+          &:after {
+            transform: translate3d(100%, 0, 0);
           }
         }
       }
@@ -44,32 +53,22 @@
     width: 135px;
     position: relative;
     z-index: 2;
-    box-shadow: 0 4px 4px 0 rgba(45, 45, 45, 0.1);
+    box-shadow: $shadow;
     vertical-align: middle;
     &-wrapper {
       display: inline-block;
       vertical-align: middle;
-      position: relative;
       margin-bottom: $gutter;
+      @extend %trick;
+      @extend %trick-hover;
       &:before, &:after {
-        content: '';
-        background-color: $violet;
-        height: 5px;
-        position: absolute;
-        box-shadow: 0 4px 4px 0 rgba(45, 45, 45, 0.1);
-        transition: all 100ms ease-out;
+        opacity: 0;
       }
       &:before {
-        bottom: #{$gutter / 2};
-        left: $gutter;
-        right: #{$gutter * -1};
+        transform: translate3d(100%, 0, 0);
       }
       &:after {
-        content: '';
-        top: #{$gutter / 2};
-        left: #{$gutter * -1};
-        right: $gutter;
-        z-index: 3;
+        transform: translate3d(-100%, 0, 0);
       }
     }
   }
@@ -95,10 +94,24 @@
   }
   &-twitter {
     fill: $violet;
-    width: 32px;
+    width: 24px;
     height: auto;
     margin-top: $gutter;
     transition: fill 250ms ease-out;
+  }
+}
+
+.animated {
+  .people-avatar-wrapper {
+    &:before, &:after {
+      opacity: 1;
+    }
+    &:before {
+      transform: translate3d(0, 0, 0);
+    }
+    &:after {
+      transform: translate3d(0, 0, 0);
+    }
   }
 }
 

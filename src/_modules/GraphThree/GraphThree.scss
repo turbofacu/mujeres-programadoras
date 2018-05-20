@@ -5,8 +5,13 @@
 .gt {
   &-flex {
     display: flex;
+    @media(max-width: $mobileMax) {
+      flex-direction: column;
+    }
   }
   &-content, &-rows {
-    width: 50%;
+    @media(min-width: $tabletMin) {
+      width: 50%;
+    }
   }
 }

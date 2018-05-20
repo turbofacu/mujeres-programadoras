@@ -7,6 +7,9 @@
     width: calc(100% / 10 - #{$gutter});
     transform: scale(0, 1);
     transform-origin: center;
+    @media(max-width: $mobileMax) {
+      flex-direction: column;
+    }
     > div {
       background-color: $green;
       padding-bottom: 100%;

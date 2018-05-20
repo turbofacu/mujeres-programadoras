@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
   &:before {
     content: '';
     background-color: rgba(black, 0.6);
@@ -23,7 +24,6 @@
     background-color: rgba($violet, 0.9);
     padding: #{$gutter * 2};
     border-radius: $radius;
-    box-shadow: 0 4px 14px 0 rgba(255, 255, 255, 0.2);
     position: relative;
     z-index: 2;
     @media(max-width: $mobileMax) {
@@ -31,16 +31,27 @@
     }
   }
   &-title {
-    font-size: 42px;
-    line-height: 1.6em;
+    font-size: 60px;
+    line-height: 60px;
     letter-spacing: 1px;
     text-align: center;
     text-transform: uppercase;
+    @media(max-width: $tabletMax) {
+      font-size: 40px;
+      line-height: 40px;
+    }
+    @media(max-width: $mobileMax) {
+      font-size: 24px;
+      line-height: 24px;
+    }
   }
   &-buttons {
     display: flex;
     justify-content: space-between;
     position: relative;
     z-index: 2;
+    @media(max-width: $mobileMax) {
+      flex-direction: column;
+    }
   }
 }

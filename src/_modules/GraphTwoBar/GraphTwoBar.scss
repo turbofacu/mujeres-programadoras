@@ -4,29 +4,67 @@
 
 .gto-bar {
   display: flex;
+  @media( max-width: $mobileMax) {
+    flex-direction: column;
+    margin-bottom: $gutter;
+  }
   @for $i from 1 through 16 {
     &:nth-child(#{$i}) {
       .gto-bar {
+        &-green {
+          transition: transform 750ms cubic-bezier(0, 0, 0.56, 1.26) #{($i - 1) * 550ms};
+        }
         &-name {
-          transition: opacity 200ms ease-out #{($i - 1) * 150ms};
+          transition: opacity 500ms ease-out #{($i - 1) * 550ms};
+        }
+        &-percentage {
+          transition: opacity 500ms ease-out #{($i + 1) * 550ms};
         }
         &-background {
-          transition: transform 200ms cubic-bezier(0, 0, 0.56, 1.26) #{($i - 1) * 150ms};
+          transition: transform 750ms cubic-bezier(0, 0, 0.56, 1.26) #{$i * 550ms};
         }
       }
+    }
+  }
+  &-wrapper {
+    position: relative;
+    width: 100%;
+    @media( max-width: $mobileMax) {
+      background-color: $greyW;
+    }
+  }
+  &-green {
+    background-color: $green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transform: scale(0, 1);
+    transform-origin: left;
+    @media( min-width: $tabletMin) {
+      bottom: 8px;
     }
   }
   &-name {
     font-weight: 400;
     min-width: 254px;
-    text-align: right;
     padding-right: #{$gutter * 2};
     box-sizing: content-box;
     opacity: 0;
+    @media( min-width: $tabletMin) {
+      text-align: right;
+    }
+  }
+  &-percentage {
+    opacity: 0;
   }
   &-border {
-    border-left: 1px solid #CCC;
-    padding-bottom: #{$gutter / 2};
+    position: relative;
+    z-index: 2;
+    @media( min-width: $tabletMin) {
+      padding-bottom: #{$gutter / 2};
+      border-left: 1px solid #CCC;
+    }
   }
   &-background {
     color: white;
@@ -39,10 +77,10 @@
 
 .animated {
   .gto-bar {
-    &-name {
+    &-name, &-percentage {
       opacity: 1;
     }
-    &-background {
+    &-background, &-green {
       transform: scale(1, 1);
     }
   }

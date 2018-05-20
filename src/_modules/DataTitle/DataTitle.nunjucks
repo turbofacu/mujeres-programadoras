@@ -1,0 +1,14 @@
+{% import "_modules/SectionTitle/SectionTitle.nunjucks" as SectionTitle %}
+
+{% macro content(content) %}
+
+<div class="container">
+  <div class="air-3">
+    {{SectionTitle.content({
+      title: 'Los Datos'
+    })}}
+    <p class="container-text">Se obtuvieron y sistematizaron los datos que presentamos luego de un relevamiento exhaustivo que incluyó, entre otras acciones, consultas a páginas web de instituciones educativas, contactos con universidades y un pedido de acceso a la información pública al Ministerio de Educación.</p>
+  </div>
+</div>
+
+{% endmacro %}

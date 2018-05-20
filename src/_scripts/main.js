@@ -6,20 +6,24 @@
 var $ = require('jquery');
 var Swiper = require('../_scripts/swiper');
 
-var mySwiper = new Swiper ('.swiper-container', {
+var pressSwiper = new Swiper ('.press-swiper', {
   slidesPerView: 3,
   spaceBetween: 24,
-  keyboard: {
-    enabled: true,
-    onlyInViewport: false,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  fadeEffect: {
-    crossFade: true
-  },
+  breakpoints: {
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    1060: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+  }
+});
+
+var quotesSwiper = new Swiper ('.quotes-swiper', {
+  slidesPerView: 1,
+  spaceBetween: 24,
 });
 
 var WOW = require('../_scripts/wow.js').WOW;

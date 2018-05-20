@@ -7,10 +7,10 @@
       <p class="text"><a class="link" href="">Chicas en Tecnología</a> (CET) y <a class="link" href="">Medallia</a> comparten los resultados y conclusiones del primer relevamiento cuantitativo de mujeres en programación de la Argentina, que comenzó en septiembre de 2017. Luego de un trabajo de cuatro de meses, se construyeron bases de datos abiertas y públicas, con el objetivo que puedan ser consultadas para impactar en la toma de decisiones, en procesos de políticas públicas y en procesos estratégicos que se propongan brindar una solución a la brecha de género en el sector de IT.</p>
     </div>
     <div class="hero-buttons">
-      <div class="button white">
+      <div class="button yellow">
         <a href="" class="button-link">Descargar el .XLS</a>
       </div>
-      <div class="button red">
+      <div class="button violet">
         <a href="" class="button-link">Descargar el .CSV</a>
       </div>
     </div>

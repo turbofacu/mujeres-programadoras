@@ -1,63 +1,62 @@
+{% import "_modules/SectionTitle/SectionTitle.nunjucks" as SectionTitle %}
 {% import "_modules/PressSlide/PressSlide.nunjucks" as PressSlide %}
 
 {% macro content() %}
 
 <section class="press-section air-3">
   <div class="container">
-  <header class="people-header air-3">
-      <h1 class="section-title people-title">
-        <div class="section-title-trick"><span class="section-title-word">Prensa<span></div>
-      </h1>
-    </header>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          {{PressSlide.content({
-            src: 'infobae',
-            alt: 'Infobae',
-            href: 'https://www.infobae.com/tecno/2018/04/12/cual-es-el-sector-con-mejores-sueldos-para-las-mujeres-y-por-que-ellas-lo-ignoran'
-          })}}
-          {{PressSlide.content({
-            src: 'la-nacion',
-            alt: 'La Nación',
-            href: 'https://www.lanacion.com.ar/2124338-poca-presencia-de-mujeres-en-carreras-tecnologicas'
-          })}}
-          {{PressSlide.content({
-            src: 'canal-ar',
-            alt: 'Canal Ar',
-            href: 'http://www.canal-ar.com.ar/25762-Santiago-Ceria-alerto-sobre-la-baja-participacion-femenina-en-el-Software.html'
-          })}}
-          {{PressSlide.content({
-            src: 'ln',
-            alt: 'LN+',
-            href: 'https://www.youtube.com/watch?v=rA63GCq-RaE'
-          })}}
-          {{PressSlide.content({
-            src: 'radio-metro',
-            alt: 'Radio Metro',
-            href: 'https://radiocut.fm/audiocut/sensacional-exito-episodio-8/'
-          })}}
-          {{PressSlide.content({
-            src: 'lm-neuquen',
-            alt: 'LM Neuquén',
-            href: 'https://www.lmneuquen.com/las-mujeres-copan-las-carreras-programacion-la-unco-n588001'
-          })}}
-          {{PressSlide.content({
-            src: 'fm-federal',
-            alt: 'FM Federal',
-            href: 'https://www.youtube.com/watch?v=kULBkbGK3Kw'
-          })}}
-          {{PressSlide.content({
-            src: 'infonegocios',
-            alt: 'Infonegocios',
-            href: 'http://infonegocios.info/enfoque/ellas-aunque-pocas-tambien-saben-de-c-pyhton-y-sql-16-de-los-estudiantes-de-programacion-son-mujeres'
-          })}}
-          {{PressSlide.content({
-            src: 'portinos',
-            alt: 'Portinos',
-            href: 'https://portinos.com/el-dato/pocas-mujeres-las-carreras-programacion'
-          })}}
+    {{SectionTitle.content({
+      title: 'Prensa'
+    })}}
+    <div class="swiper-container press-swiper">
+      <div class="swiper-wrapper">
+        {{PressSlide.content({
+          src: 'infobae',
+          alt: 'Infobae',
+          href: 'https://www.infobae.com/tecno/2018/04/12/cual-es-el-sector-con-mejores-sueldos-para-las-mujeres-y-por-que-ellas-lo-ignoran'
+        })}}
+        {{PressSlide.content({
+          src: 'la-nacion',
+          alt: 'La Nación',
+          href: 'https://www.lanacion.com.ar/2124338-poca-presencia-de-mujeres-en-carreras-tecnologicas'
+        })}}
+        {{PressSlide.content({
+          src: 'canal-ar',
+          alt: 'Canal Ar',
+          href: 'http://www.canal-ar.com.ar/25762-Santiago-Ceria-alerto-sobre-la-baja-participacion-femenina-en-el-Software.html'
+        })}}
+        {{PressSlide.content({
+          src: 'ln',
+          alt: 'LN+',
+          href: 'https://www.youtube.com/watch?v=rA63GCq-RaE'
+        })}}
+        {{PressSlide.content({
+          src: 'radio-metro',
+          alt: 'Radio Metro',
+          href: 'https://radiocut.fm/audiocut/sensacional-exito-episodio-8/'
+        })}}
+        {{PressSlide.content({
+          src: 'lm-neuquen',
+          alt: 'LM Neuquén',
+          href: 'https://www.lmneuquen.com/las-mujeres-copan-las-carreras-programacion-la-unco-n588001'
+        })}}
+        {{PressSlide.content({
+          src: 'fm-federal',
+          alt: 'FM Federal',
+          href: 'https://www.youtube.com/watch?v=kULBkbGK3Kw'
+        })}}
+        {{PressSlide.content({
+          src: 'infonegocios',
+          alt: 'Infonegocios',
+          href: 'http://infonegocios.info/enfoque/ellas-aunque-pocas-tambien-saben-de-c-pyhton-y-sql-16-de-los-estudiantes-de-programacion-son-mujeres'
+        })}}
+        {{PressSlide.content({
+          src: 'portinos',
+          alt: 'Portinos',
+          href: 'https://portinos.com/el-dato/pocas-mujeres-las-carreras-programacion'
+        })}}
 
-        </div>
+      </div>
     </div>
   </div>
 </section>

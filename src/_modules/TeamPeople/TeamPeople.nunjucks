@@ -1,15 +1,14 @@
+{% import "_modules/SectionTitle/SectionTitle.nunjucks" as SectionTitle %}
 {% import "_modules/PeopleItem/PeopleItem.nunjucks" as PeopleItem %}
 
 {% macro content() %}
 
 <section class="people-section air-3">
   <div class="container">
-    <header class="people-header air-3">
-      <h1 class="section-title people-title">
-        <div class="section-title-trick"><span class="section-title-word">El Equipo<span></div>
-      </h1>
-      <span class="section-subtitle people-subtitle">Equipo ampliado de Chicas en Tecnología y Medallia que trabajó en la definición.</span>
-    </header>
+    {{SectionTitle.content({
+      title: 'El Equipo',
+      subtitle: 'Equipo ampliado de Chicas en Tecnología y Medallia que trabajó en la definición.'
+    })}}
     <ul class="people-list">
       {{PeopleItem.content({
         src: 'jolo',

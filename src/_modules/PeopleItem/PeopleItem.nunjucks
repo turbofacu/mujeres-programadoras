@@ -1,6 +1,6 @@
 {% macro content(content) %}
 
-<li class="people-item">
+<li class="people-item wow">
   <div class="people-container">
     <div class="people-avatar-wrapper">
       <img class="people-avatar" src="images/people/{{content.src}}.jpg" alt="Foto de {{content.name}}" />

@@ -3,10 +3,9 @@
 .press-slide {
   &-wrapper {
     display: block;
-    transition: all 500ms ease-out;
     cursor: pointer;
+    @extend %elevate;
     &:hover {
-      transform: translate3d(0, -2px, 0);
       .press-slide-text {
         background-color: $yellow;
         color: $black;

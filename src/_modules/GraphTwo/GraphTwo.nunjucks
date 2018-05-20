@@ -1,4 +1,5 @@
 {% import "_modules/GraphTwoBar/GraphTwoBar.nunjucks" as GraphTwoBar %}
+{% import "_modules/GraphData/GraphData.nunjucks" as GraphData %}
 
 {% macro content() %}
 
@@ -11,63 +12,78 @@
       <div class="gto-top wow">
         {{GraphTwoBar.content({
           name: 'U Nac. de La Rioja',
-          percentage: '25.94%'
+          percentageW: '25.94%',
+          percentageM: '74.06%'
         })}}
         {{GraphTwoBar.content({
           name: 'U Nac. del Comahue',
-          percentage: '23.13%'
+          percentageW: '23.13%',
+          percentageM: '76.87%'
         })}}
         {{GraphTwoBar.content({
           name: 'Univ Nac. de Jujuy',
-          percentage: '21.68%'
+          percentageW: '21.68%',
+          percentageM: '78.32%'
         })}}
         {{GraphTwoBar.content({
           name: 'U Nac. de Salta',
-          percentage: '21.52%'
+          percentageW: '21.52%',
+          percentageM: '78.48%'
         })}}
         {{GraphTwoBar.content({
           name: 'U Nac. de Tucumán',
-          percentage: '18.61%'
+          percentageW: '18.61%',
+          percentageM: '81.31%'
         })}}
         {{GraphTwoBar.content({
           name: 'U Nac. Arturo de Jauretche',
-          percentage: '17.91%'
+          percentageW: '17.91%',
+          percentageM: '82.09%'
         })}}
         {{GraphTwoBar.content({
           name: 'U de Buenos Aires',
-          percentage: '17.08%'
+          percentageW: '17.08%',
+          percentageM: '82.92%'
         })}}
         {{GraphTwoBar.content({
           name: 'U de La Matanza',
-          percentage: '15.82%'
+          percentageW: '15.82%',
+          percentageM: '84.18%'
         })}}
         {{GraphTwoBar.content({
           name: 'U Nac. de La Plata',
-          percentage: '15.18%'
+          percentageW: '15.18%',
+          percentageM: '84.82%'
         })}}
         {{GraphTwoBar.content({
           name: 'U Tec. Nacional',
-          percentage: '14.60%'
+          percentageW: '14.60%',
+          percentageM: '85.40%'
         })}}
         {{GraphTwoBar.content({
           name: 'U Nac. de Córdoba',
-          percentage: '14.34%'
+          percentageW: '14.34%',
+          percentageM: '85.66%'
         })}}
         {{GraphTwoBar.content({
           name: 'U Emp. Siglo 21',
-          percentage: '13.58%'
+          percentageW: '13.58%',
+          percentageM: '86.42%'
         })}}
         {{GraphTwoBar.content({
           name: 'U Abierta Interamericana',
-          percentage: '13.22%'
+          percentageW: '13.22%',
+          percentageM: '86.42%'
         })}}
         {{GraphTwoBar.content({
           name: 'U Aut. de Entre Ríos',
-          percentage: '12.77%'
+          percentageW: '12.77%',
+          percentageM: '83.27%'
         })}}
         {{GraphTwoBar.content({
           name: 'U Arg. de la Empresa',
-          percentage: '11.49%'
+          percentageW: '11.49%',
+          percentageM: '88.51%'
         })}}
       </div>
       <div class="gto-bottom air-3">
@@ -80,9 +96,10 @@
           <span class="gto-percentage">100</span>
         </div>
       </div>
-      <div class="graph-text">
-        <p>En el ranking de las 15 instituciones educativas con más inscripciones totales, las universidades más grandes del país a pesar de tener mayores inscripciones cuentan con un porcentaje de mujeres inscriptas que no superan el 17%. Mientras que la Universidad Nacional de La Rioja encabeza el ranking de aquellas con mayor porcentaje de mujeres: un 26%; seguida por la Universidad Nacional del Comahue con un 23% y la Universidad Nacional de Jujuy con un 22%.</p>
-      </div>
+      {{GraphData.content({
+        title: 'El Dato',
+        text: 'En el ranking de las 15 instituciones educativas con más inscripciones totales, las universidades más grandes del país a pesar de tener mayores inscripciones cuentan con un porcentaje de mujeres inscriptas que no superan el 17%. Mientras que la Universidad Nacional de La Rioja encabeza el ranking de aquellas con mayor porcentaje de mujeres: un 26%; seguida por la Universidad Nacional del Comahue con un 23% y la Universidad Nacional de Jujuy con un 22%.'
+      })}}
     </section>
   </div>
 {% endmacro %}

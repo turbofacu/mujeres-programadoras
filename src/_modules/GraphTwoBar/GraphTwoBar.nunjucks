@@ -4,9 +4,12 @@
 
   <div class="gto-bar">
     <span class="gto-bar-name">{{content.name}}</span>
-    <div class="gto-bar-border" style="width: {{content.percentage}}">
-      <div class="gto-bar-background">
-        <span class="gto-bar-percentage">{{content.percentage}}</span>
+    <div class="gto-bar-wrapper">
+      <div class="gto-bar-green" style="width: {{content.percentageM}}"></div>
+      <div class="gto-bar-border" style="width: {{content.percentageW}}">
+        <div class="gto-bar-background">
+          <span class="gto-bar-percentage">{{content.percentageW}}</span>
+        </div>
       </div>
     </div>
   </div>

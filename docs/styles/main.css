@@ -65,6 +65,10 @@
   background-color: #f8e71c;
 }
 
+.section-title-trick.violet:before, .section-title-trick.violet:after {
+  background-color: #9b5ea5;
+}
+
 .swiper-container {
   margin: 0 auto;
   position: relative;
@@ -903,7 +907,7 @@ button.swiper-pagination-bullet {
 
 .hero {
   background-color: white;
-  background-image: url("/images/hero.jpg");
+  background-image: url("../images/hero.jpg");
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -920,7 +924,7 @@ button.swiper-pagination-bullet {
 
 .hero:before {
   content: '';
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.75);
   position: absolute;
   top: 0;
   left: 0;
@@ -930,9 +934,9 @@ button.swiper-pagination-bullet {
 
 .hero-content {
   color: white;
-  background-color: rgba(155, 94, 165, 0.9);
+  text-align: center;
+  margin: 0 auto;
   padding: 32px;
-  border-radius: 4px;
   position: relative;
   z-index: 2;
 }
@@ -940,6 +944,12 @@ button.swiper-pagination-bullet {
 @media (max-width: 767px) {
   .hero-content {
     padding: 32px 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-content {
+    max-width: 60%;
   }
 }
 
@@ -960,8 +970,8 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 767px) {
   .hero-title {
-    font-size: 24px;
-    line-height: 24px;
+    font-size: 30px;
+    line-height: 30px;
   }
 }
 

@@ -7,7 +7,7 @@
     {{SectionTitle.content({
       title: 'Los Datos'
     })}}
-    <p class="container-text">Se obtuvieron y sistematizaron los datos que presentamos luego de un relevamiento exhaustivo que incluyó, entre otras acciones, consultas a páginas web de instituciones educativas, contactos con universidades y un pedido de acceso a la información pública al Ministerio de Educación.</p>
+    <p class="container-text text-center">Se obtuvieron y sistematizaron los datos que presentamos luego de un relevamiento exhaustivo que incluyó, entre otras acciones, consultas a páginas web de instituciones educativas, contactos con universidades y un pedido de acceso a la información pública al Ministerio de Educación.</p>
   </div>
 </div>
 

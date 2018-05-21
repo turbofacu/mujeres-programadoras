@@ -2,7 +2,7 @@
 
 <header class="air-3 wow">
   <h1 class="section-title">
-    <div class="section-title-trick"><span class="section-title-word">{{content.title}}<span></div>
+    <div class="section-title-trick {{content.class}}"><span class="section-title-word">{{content.title}}<span></div>
   </h1>
   {% if content.subtitle %}
   <span class="section-subtitle">{{content.subtitle}}</span>

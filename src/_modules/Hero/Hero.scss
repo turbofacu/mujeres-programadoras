@@ -12,7 +12,7 @@
   position: relative;
   &:before {
     content: '';
-    background-color: rgba(black, 0.6);
+    background-color: rgba(black, 0.75);
     position: absolute;
     top: 0;
     left: 0;
@@ -21,13 +21,16 @@
   }
   &-content {
     color: white;
-    background-color: rgba($violet, 0.9);
+    text-align: center;
+    margin: 0 auto;
     padding: #{$gutter * 2};
-    border-radius: $radius;
     position: relative;
     z-index: 2;
     @media(max-width: $mobileMax) {
       padding: #{$gutter * 2} $gutter;
+    }
+    @media(min-width: $tabletMin) {
+      max-width: 60%;
     }
   }
   &-title {
@@ -41,8 +44,8 @@
       line-height: 40px;
     }
     @media(max-width: $mobileMax) {
-      font-size: 24px;
-      line-height: 24px;
+      font-size: 30px;
+      line-height: 30px;
     }
   }
   &-buttons {

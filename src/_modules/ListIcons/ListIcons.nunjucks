@@ -1,7 +1,14 @@
+{% import "_modules/SectionTitle/SectionTitle.nunjucks" as SectionTitle %}
+
 {% macro content() %}
 
 <section class="list-icons-section air-6">
   <div class="container">
+    {{SectionTitle.content({
+      title: '¿Por qué abrimos estas bases?',
+      class: 'violet'
+    })}}
+    <p class="container-text text-center air-6">Se obtuvieron y sistematizaron los datos que presentamos luego de un relevamiento exhaustivo que incluyó, entre otras acciones, consultas a páginas web de instituciones educativas, contactos con universidades y un pedido de acceso a la información pública al Ministerio de Educación.</p>
     <ul class="list-icons">
       <li class="list-icons-item">
         <div class="text-center air-1">

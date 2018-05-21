@@ -1,1 +1,11 @@
 @import '../../_styles/variables';
+
+.press-swiper {
+  padding: 0 0 #{$gutter * 3};
+  @media(min-width: $desktopMin) {
+    padding: 0 #{$gutter * 3} #{$gutter * 3};
+  }
+  @media(max-width: $mobileMax) {
+    margin: 0 #{$gutter * -1};
+  }
+}

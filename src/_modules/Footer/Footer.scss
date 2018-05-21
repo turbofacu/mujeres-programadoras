@@ -1,0 +1,18 @@
+@import '../../_styles/variables';
+
+.footer {
+  background-color: $black;
+  padding: #{$gutter * 5} $gutter;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  img {
+    margin: 0 #{$gutter * 2} #{$gutter * 2};
+  }
+  &-copyright {
+    width: 100%;
+    flex-basis: 100%;
+    text-align: center;
+  }
+}

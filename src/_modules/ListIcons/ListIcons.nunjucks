@@ -1,6 +1,6 @@
 {% macro content() %}
 
-<section class="list-icons-section air-3">
+<section class="list-icons-section air-6">
   <div class="container">
     <ul class="list-icons">
       <li class="list-icons-item">
@@ -43,7 +43,7 @@
             <path d="M405.17,363.154h-55.727c-2.209,0-4,1.791-4,4v48.256c0,2.209,1.791,4,4,4h55.727c2.209,0,4-1.791,4-4v-48.256 C409.17,364.945,407.379,363.154,405.17,363.154z" />
           </svg>
         </div>
-        <span class="list-icons-number text-center air-1">2015</span>
+        <span class="list-icons-number text-center air-1 counter">2015</span>
         <p class="list-icons-text text-center">Último año con estadísticas disponibles al momento de realizar el relevamiento</p>
       </li>
     </ul>

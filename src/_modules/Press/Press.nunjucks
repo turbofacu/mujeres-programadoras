@@ -3,7 +3,7 @@
 
 {% macro content() %}
 
-<section class="press-section air-3">
+<section class="press-section air-6">
   <div class="container">
     {{SectionTitle.content({
       title: 'Prensa'
@@ -55,8 +55,18 @@
           alt: 'Portinos',
           href: 'https://portinos.com/el-dato/pocas-mujeres-las-carreras-programacion'
         })}}
-
       </div>
+      <div class="slider-arrow slider-arrow-next press-arrow-next">
+        <svg x="0px" y="0px" viewBox="0 0 315.7 512" width="315.7px" height="512px">
+          <polygon class="st0" points="59.7,0 0,59.7 196.3,256 0,452.3 59.7,512 315.7,256" />
+        </svg>
+      </div>
+      <div class="slider-arrow slider-arrow-prev press-arrow-prev">
+        <svg x="0px" y="0px" viewBox="0 0 315.7 512" width="315.7px" height="512px">
+          <polygon points="256,512 315.7,452.3 119.5,256 315.7,59.7 256,0 0,256"/>
+        </svg>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
   </div>
 </section>

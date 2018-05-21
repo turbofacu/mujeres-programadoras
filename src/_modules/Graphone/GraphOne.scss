@@ -3,8 +3,11 @@
 @import '../../_styles/variables';
 
 .graph {
+  margin-bottom: #{$gutter * 6};
+}
+
+.graph {
   &One {
-    margin-bottom: 50px;
     .graph-content {
       display: flex;
       flex-direction: column;

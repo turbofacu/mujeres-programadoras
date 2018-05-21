@@ -22,8 +22,13 @@
   &-trick {
     @extend %trick;
     @extend %trick-special;
-    max-width: 70%;
     margin: 0 auto;
+    @media(min-width: $tabletMin) {
+      max-width: 80%;
+    }
+    @media(min-width: $desktopMin) {
+      max-width: 70%;
+    }
   }
   &-content {
     background-color: $yellow;

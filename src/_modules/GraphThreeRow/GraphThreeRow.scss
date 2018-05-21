@@ -9,6 +9,7 @@
     transform-origin: center;
     @media(max-width: $mobileMax) {
       flex-direction: column;
+      width: calc(100% / 10 - #{$gutter / 2});
     }
     > div {
       background-color: $green;
@@ -27,6 +28,9 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+      @media(max-width: $mobileMax) {
+        margin-bottom: #{$gutter / 2};
+      }
       &.animated {
         .gt {
           &-square {

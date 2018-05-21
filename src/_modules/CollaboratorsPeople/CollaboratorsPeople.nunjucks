@@ -3,7 +3,7 @@
 
 {% macro content() %}
 
-<section class="people-section air-3">
+<section class="people-section air-6">
   <div class="container">
     {{SectionTitle.content({
       title: 'Colaboradores',

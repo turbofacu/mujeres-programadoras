@@ -1,5 +1,6 @@
 {% extends '_layouts/base.nunjucks' %}
 
+{% import "_modules/Header/Header.nunjucks" as Header %}
 {% import "_modules/Hero/Hero.nunjucks" as Hero %}
 {% import "_modules/ListIcons/ListIcons.nunjucks" as List %}
 {% import "_modules/DataTitle/DataTitle.nunjucks" as DataTitle %}
@@ -11,6 +12,7 @@
 {% import "_modules/CollaboratorsPeople/CollaboratorsPeople.nunjucks" as CollaboratorsPeople %}
 {% import "_modules/Press/Press.nunjucks" as Press %}
 {% import "_modules/Quotes/Quotes.nunjucks" as Quotes %}
+{% import "_modules/Footer/Footer.nunjucks" as Footer %}
 
 {% block content %}
 
@@ -23,6 +25,7 @@
 </svg>
 
 <div class="main-container">
+  {{ Header.content() }}
   {{ Hero.content() }}
   {{ List.content() }}
   {{ DataTitle.content() }}
@@ -34,6 +37,7 @@
   {{ TeamPeople.content() }}
   {{ CollaboratorsPeople.content() }}
   {{ Press.content() }}
+  {{ Footer.content() }}
 </div>
 
 {% endblock %}

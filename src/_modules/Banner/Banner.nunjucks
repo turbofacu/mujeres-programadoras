@@ -1,7 +1,7 @@
 
 {% macro content(content) %}
 
-<div class="banner air-4">
+<div class="banner air-6">
   <div class="container">
     <div class="banner-flex">
       <span class="banner-text">Conocé cómo se recopilaron los datos</span>

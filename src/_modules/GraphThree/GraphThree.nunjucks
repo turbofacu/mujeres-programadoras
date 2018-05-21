@@ -4,7 +4,7 @@
 {% macro content() %}
 
   <div class="container">
-    <section class="graph graphThree air-4">
+    <section class="graph graphThree">
       <header class="graph-title-wrapper air-2">
         <h1 class="graph-title air-1">Inscripciones: Distribución por genero</h1>
         <p class="graph-subtitle">Distribución por género. Datos entre 2010 y 2015</p>

@@ -4,7 +4,7 @@
 {% macro content() %}
 
   <div class="container">
-    <section class="graph graphThree air-2">
+    <section class="graph graphTwo">
       <header class="graph-title-wrapper air-2">
         <h1 class="graph-title air-1">Universidades con mayor presencia de mujeres</h1>
         <p class="graph-subtitle">Sobre las 15 Universidades con mayor inscripciones entre 2010 y 2015</p>

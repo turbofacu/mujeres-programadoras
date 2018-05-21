@@ -3,7 +3,7 @@
 
 {% macro content() %}
 
-<section class="quotes-section air-3">
+<section class="quotes-section air-6">
   <div class="container">
     {{SectionTitle.content({
       title: '¿Por qué es importante?'
@@ -28,10 +28,18 @@
           team: 'President, Medallia Argentina',
           text: 'El sector de software y servicios informáticos es uno de los más dinámicos del país, y ya genera más de 1700 millones de dólares por año en exportaciones. La baja participación femenina hace que se pierdan muchas oportunidades de generación de riqueza, porque la industria necesita de personas calificadas para seguir creciendo. Sin embargo, el problema más grave desde mi punto de vista es de la diversidad. Estas tecnologías están cambiando al mundo, y ese cambio necesita de la participación femenina.'
         })}}
-
-
-
       </div>
+      <div class="slider-arrow slider-arrow-next quotes-arrow-next">
+        <svg x="0px" y="0px" viewBox="0 0 315.7 512" width="315.7px" height="512px">
+          <polygon class="st0" points="59.7,0 0,59.7 196.3,256 0,452.3 59.7,512 315.7,256" />
+        </svg>
+      </div>
+      <div class="slider-arrow slider-arrow-prev quotes-arrow-prev">
+        <svg x="0px" y="0px" viewBox="0 0 315.7 512" width="315.7px" height="512px">
+          <polygon points="256,512 315.7,452.3 119.5,256 315.7,59.7 256,0 0,256"/>
+        </svg>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
   </div>
 </section>

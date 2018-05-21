@@ -6,6 +6,7 @@
 @import '../_styles/swiper';
 
 // Import Modules
+@import '../_modules/Header/Header';
 @import '../_modules/Hero/Hero';
 @import '../_modules/SectionTitle/SectionTitle';
 @import '../_modules/ListIcons/ListIcons';
@@ -17,10 +18,13 @@
 @import '../_modules/GraphThree/GraphThree';
 @import '../_modules/GraphThreeRow/GraphThreeRow';
 @import '../_modules/Banner/Banner';
+@import '../_modules/Quotes/Quotes';
 @import '../_modules/QuotesSlide/QuotesSlide';
 @import '../_modules/TeamPeople/TeamPeople';
 @import '../_modules/PeopleItem/PeopleItem';
+@import '../_modules/Press/Press';
 @import '../_modules/PressSlide/PressSlide';
+@import '../_modules/Footer/Footer';
 
 // Box sizing partial styles:
 // Apply a natural box layout model to all elements
@@ -83,6 +87,14 @@ a {
 
 .air-4 {
   margin-bottom: #{$gutter * 4};
+}
+
+.air-5 {
+  margin-bottom: #{$gutter * 5};
+}
+
+.air-6 {
+  margin-bottom: #{$gutter * 6};
 }
 
 .text-center {
@@ -177,5 +189,41 @@ a {
     @media(max-width: $mobileMax) {
       font-size: 12px;
     }
+  }
+}
+
+.slider-arrow {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: calc((50% - 32px / 2) - #{$gutter * 3} / 2);
+  z-index: 2;
+  cursor: pointer;
+  @media( max-width: $tabletMax) {
+    display: none;
+  }
+  &:hover {
+    > svg {
+      fill: $yellow;
+    }
+  }
+  > svg {
+    fill: $violet;
+    width: #{$gutter * 2};
+    height: auto;
+    transition: fill 250ms ease-out;
+
+  }
+  &-next {
+    right: 0;
+  }
+  &-prev {
+    left: 0;
+  }
+}
+
+.swiper-pagination-bullet {
+  &.swiper-pagination-bullet-active {
+    background-color: $violet;
   }
 }

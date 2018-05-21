@@ -1,0 +1,9 @@
+{% macro content() %}
+
+<footer class="footer">
+  <img src="images/logo-medallia.svg" alt="Logo de Chicas en programación" />
+  <img src="images/logo-medallia.svg" alt="Logo de Medallia" />
+  <span class="footer-copyright">© Chicas en Tecnología & Medallia</span>
+</footer>
+
+{% endmacro %}

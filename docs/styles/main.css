@@ -10,11 +10,11 @@
           box-shadow: 0 4px 4px 0 rgba(45, 45, 45, 0.1);
 }
 
-.section-title-trick, .graph-data, .quotes-slide-avatar-wrapper, .quotes-slide-trick, .people-avatar-wrapper, .button {
+.section-title-trick, .graph-data, .quotes-slide-avatar-wrapper, .people-avatar-wrapper, .button {
   position: relative;
 }
 
-.section-title-trick:before, .graph-data:before, .quotes-slide-avatar-wrapper:before, .quotes-slide-trick:before, .people-avatar-wrapper:before, .button:before, .section-title-trick:after, .graph-data:after, .quotes-slide-avatar-wrapper:after, .quotes-slide-trick:after, .people-avatar-wrapper:after, .button:after {
+.section-title-trick:before, .graph-data:before, .quotes-slide-avatar-wrapper:before, .people-avatar-wrapper:before, .button:before, .section-title-trick:after, .graph-data:after, .quotes-slide-avatar-wrapper:after, .people-avatar-wrapper:after, .button:after {
   content: '';
   background-color: #9b5ea5;
   height: 5px;
@@ -25,13 +25,13 @@
   transition: all 100ms ease-out;
 }
 
-.section-title-trick:before, .graph-data:before, .quotes-slide-avatar-wrapper:before, .quotes-slide-trick:before, .people-avatar-wrapper:before, .button:before {
+.section-title-trick:before, .graph-data:before, .quotes-slide-avatar-wrapper:before, .people-avatar-wrapper:before, .button:before {
   bottom: 8px;
   left: 50%;
   right: -16px;
 }
 
-.section-title-trick:after, .graph-data:after, .quotes-slide-avatar-wrapper:after, .quotes-slide-trick:after, .people-avatar-wrapper:after, .button:after {
+.section-title-trick:after, .graph-data:after, .quotes-slide-avatar-wrapper:after, .people-avatar-wrapper:after, .button:after {
   content: '';
   top: 8px;
   left: -16px;
@@ -50,23 +50,31 @@
 }
 
 @media (min-width: 768px) {
-  .graph-data:after, .quotes-slide-trick:after {
+  .graph-data:after {
     left: -80px;
   }
 }
 
 @media (min-width: 768px) {
-  .graph-data:before, .quotes-slide-trick:before {
+  .graph-data:before {
     right: -80px;
   }
 }
 
-.section-title-trick:before, .graph-data:before, .quotes-slide-avatar-wrapper:before, .section-title-trick:after, .graph-data:after, .quotes-slide-avatar-wrapper:after {
+.section-title-trick:before, .graph-data:before, .section-title-trick:after, .graph-data:after {
   background-color: #f8e71c;
 }
 
 .section-title-trick.violet:before, .section-title-trick.violet:after {
   background-color: #9b5ea5;
+}
+
+.section-title-trick:after {
+  display: none;
+}
+
+.section-title-trick:before {
+  left: -16px;
 }
 
 .swiper-container {

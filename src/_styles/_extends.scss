@@ -65,3 +65,12 @@
     background-color: $violet;
   }
 }
+
+%trick-title {
+  &:after {
+    display: none;
+  }
+  &:before {
+    left: #{$gutter * -1};
+  }
+}

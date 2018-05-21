@@ -17,6 +17,7 @@
       display: inline-block;
       @extend %trick;
       @extend %trick-yellow;
+      @extend %trick-title;
       &:before, &:after {
         opacity: 0;
       }

@@ -16,12 +16,9 @@
       vertical-align: middle;
       margin-bottom: $gutter;
       @extend %trick;
-      @extend %trick-yellow;
     }
   }
   &-trick {
-    @extend %trick;
-    @extend %trick-special;
     margin: 0 auto;
     @media(min-width: $tabletMin) {
       max-width: 80%;
